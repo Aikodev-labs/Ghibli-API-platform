@@ -1,6 +1,7 @@
 import React from 'react'
 
 const TryIt = () => {
+
   return (
     <section className=' max-w-[1366px] h-auto m-auto mt-28' >
       <h1 className='text-[50px] text-center font-extrabold tracking-tighter text-[#083344] ' >TRY IT</h1>
@@ -11,11 +12,11 @@ const TryIt = () => {
 
         {/* Contenedor de scripts */}
         <div className='w-[717px] h-[auto] relative pt-14 ' >
-          <div className='w-full h-[130px] bg-[#083344] ' >
+          <div className='w-full h-[130px] bg-[#083344] rounded-md ' >
             <p className='text-[#FFFFFF] w-[659px] h-full m-auto py-4 font-mono text-xl ' >
             fetch('https://ghibli.vercel.app/api/random')
-            .then(response => response.json()) <br />
-            .then(card => console.log(card))
+            .then(response =&gt; response.json()) <br />
+            .then(card =&gt; console.log(card))
             </p>
           </div>
 
@@ -36,10 +37,15 @@ const TryIt = () => {
 
       </div>
 
+      <div className='flex justify-end w-full h-20 mt-16'>
+        <div className='w-[394px] mr-16 text-center' >
+          <p className='font-semibold text-lg text-[#083344] ' > 
+            <span className='text-[#0E7490] ' >EXPLORE</span> DOCUMENTATION <span className='text-[#0E7490]' >NOW!</span>
+          </p>
 
-
-
-
+          <button className='w-[180px] h-[43px] bg-[#7E22CE] hover:bg-[#54178a] transition-all duration-150 rounded-full text-center text-[#FFFFFF] text-lg mt-2 ' > GET STARTED </button>
+        </div>
+      </div>
 
 
     </section>

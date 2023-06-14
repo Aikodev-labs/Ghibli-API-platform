@@ -1,4 +1,3 @@
-import './App.css'
 import WhatAbout from './components/WhatAbout'
 import Header from './layout/Header'
 import TryIt from './components/TryIt'

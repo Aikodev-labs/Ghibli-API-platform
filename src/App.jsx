@@ -1,15 +1,18 @@
 import './App.css'
-import "./components/WhatAbout"
 import WhatAbout from './components/WhatAbout'
+import Header from './layout/Header'
+import TryIt from './components/TryIt'
+
 
 function App() {
 
 
   return (
-    <div>
-      <WhatAbout></WhatAbout>
-    </div>
-    
+    <>
+    <Header />
+    <WhatAbout />
+    <TryIt />
+    </>
   )
 }
 

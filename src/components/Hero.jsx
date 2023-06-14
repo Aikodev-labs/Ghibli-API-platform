@@ -1,6 +1,7 @@
 import React from 'react'
 
 const Hero = () => {
+   
   return (
     
     <main className='min-h-screen flex items-center

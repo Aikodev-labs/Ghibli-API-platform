@@ -1,12 +1,15 @@
 import './App.css'
+import "./components/WhatAbout"
+import WhatAbout from './components/WhatAbout'
 
 function App() {
 
 
   return (
     <div>
-      <h1 className='text-red-500'>Hola mundo!</h1>
+      <WhatAbout></WhatAbout>
     </div>
+    
   )
 }
 

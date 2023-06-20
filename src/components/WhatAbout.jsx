@@ -6,7 +6,7 @@ import mockup from '../assets/img/rectangle.png';
 const WhatAbout = () => {
   return (
     
-    <div className='flex-col item-center justify-center bg-background_Blue h-screen md:px-20 xl:px-auto py-24'>
+    <div className='flex-col item-center justify-center  h-screen md:px-20 xl:px-auto py-24'>
     
         <h1 className='text-cyan-950 text-center font-black text-5xl'>What it is about?</h1>
         <div className='flex gap-20 py-12 item-center justify-center'>

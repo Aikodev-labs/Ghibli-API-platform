@@ -9,7 +9,7 @@ const Header = () => {
   ]
 
   return (
-    <header className="max-w-[1366px] h-16 border bg-black m-auto text-[#fafafa]" > {/* Puse un fondo black pero en realidad va transparent */}
+    <header className="max-w-[1366px] h-16  m-auto text-[#fafafa]" > {/* Puse un fondo black pero en realidad va transparent */}
       <nav className="flex justify-center items-center w-full h-full" >
 
         <h1 className="font-bold text-[30px] " >AIKODEV</h1>

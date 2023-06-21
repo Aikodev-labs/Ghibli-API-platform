@@ -1,7 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Importa el archivo CSS de AOS
 
 const Hero = () => {
-   
+  
+  useEffect(() => {
+    AOS.init();
+  }, []); 
+
   return (
     
     <main className='min-h-screen flex items-center
@@ -21,7 +28,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className='h-[617px] w-[617px] pt-4 overflow-hidden'>
+      <div className='h-[617px] w-[617px] pt-4 overflow-hidden' data-aos="fade-down-left" data-aos-duration="3000"  >
         <img className='h-full w-full' src="src/assets/images/gatobus.png" alt="hero image"/>
       </div>
     </main>

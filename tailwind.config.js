@@ -9,7 +9,9 @@ extend: {
     },
     fontFamily:{
         'helvetica': ['Helvetica', 'sans-serif'],
-        'mono': ['JetBrains Mono', 'monospace']
+        'mono': ['JetBrains Mono', 'monospace'],
+        'neue-lt':["HelveticaNeueLTStd", "sans-serif"],
+        'neue-ltcd':["HelveticaNeueLTStdCondensed", "sans-serif"],
     }
 },
 },

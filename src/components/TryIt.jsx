@@ -1,12 +1,20 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Importa el archivo CSS de AOS
+
 import { Card } from './Card'
+
 
 const TryIt = () => {
 
+  useEffect(() => {
+    AOS.init();
+  }, []); 
+
   return (
     <section className=' max-w-[1366px] h-auto m-auto mt-28' >
-      <h1 className='text-[50px] text-center font-extrabold tracking-tighter text-[#083344] ' >TRY IT</h1>
-      <p className='text-[30px] text-center font-semibold tracking-tighter text-[#0E7490] ' >Run this code to get a random card.</p>
+      <h1 className='text-[50px] text-center font-extrabold tracking-tighter text-[#083344] ' data-aos="flip-up" >TRY IT</h1>
+      <p className='text-[30px] text-center font-semibold tracking-tighter text-[#0E7490] ' data-aos="flip-up" >Run this code to get a random card.</p>
 
       {/* Contenedor de scripts y card */}
       <div className='flex justify-around mt-5 ' >

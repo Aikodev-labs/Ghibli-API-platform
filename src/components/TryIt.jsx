@@ -1,4 +1,5 @@
 import React from 'react'
+import { Card } from './Card'
 
 const TryIt = () => {
 
@@ -29,11 +30,11 @@ const TryIt = () => {
           </div>
         </div>
 
-        {/* Contenedor de card.
-        NOTA: Este DIV debería ser reemplazado o bien adentro poner la card que haga desi. */}
-        <div className='w-[394px] h-[477px] border border-cyan-400 ' >
-
+        {/* Contenedor de card. */}
+        <div className='w-[394px] h-[477px] ' >
+            <Card />
         </div>
+        
 
       </div>
 

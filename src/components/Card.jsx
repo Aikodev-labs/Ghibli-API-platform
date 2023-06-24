@@ -3,9 +3,9 @@ import image from '../assets/images/howl.jpg'
 
 export const Card = () => {
   return (
-    <div className=' flex justify-center items-center w-screen h-screen'>
-        <div className=' flex-col w-3/12 h-auto  rounded shadow-lg '>
-            <div className='w-full h-50 '> <img src={image} className='rounded-t' /></div>
+    <>
+      <div className=' w-[394px] h-[477px] rounded shadow-lg '>
+          <div className='w-full h-50 '> <img src={image} className='rounded-t' /></div>
             <div className='m-5'>
                 <span className='text-lg font-medium'>El castillo ambulante | ハウルの動く城</span>
                 <div className='text-base font-light py-4'>
@@ -18,8 +18,8 @@ export const Card = () => {
                 <div className='cursor-pointer bg-gray-300 text-gray-700 px-4 py-1 rounded-full'>#Miyazaki</div>
                 <div className='cursor-pointer bg-gray-300 text-gray-700 px-4 py-1 rounded-full'>#anime</div>
             </div>
-            </div>
-        </div>
-    </div>
+          </div>
+      </div>
+    </>
   )
 }

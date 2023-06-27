@@ -12,7 +12,7 @@ const TryIt = () => {
   }, []); 
 
   return (
-    <section className=' max-w-[1366px] h-auto m-auto mt-28' >
+    <section className=' max-w-[1366px] h-auto m-auto mb-20' >
       <h1 className='text-[50px] text-center font-extrabold tracking-tighter text-[#083344] ' data-aos="flip-up" >TRY IT</h1>
       <p className='text-[30px] text-center font-semibold tracking-tighter text-[#0E7490] ' data-aos="flip-up" >Run this code to get a random card.</p>
 

@@ -4,7 +4,7 @@ import image from '../assets/images/howl.jpg'
 export const Card = () => {
   return (
     <>
-      <div className=' w-[394px] h-[477px] rounded shadow-lg '>
+      <div className=' w-[394px] h-[477px] rounded shadow-lg bg-white'>
           <div className='w-full h-50 '> <img src={image} className='rounded-t' /></div>
             <div className='m-5'>
                 <span className='text-lg font-medium'>El castillo ambulante | ハウルの動く城</span>

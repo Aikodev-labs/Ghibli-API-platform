@@ -1,4 +1,3 @@
-import React from 'react'
 import image from '../assets/images/howl.jpg'
 
 export const Card = () => {

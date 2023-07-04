@@ -2,32 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
-
 /* font config */
-@font-face { 
-  font-family: 'HelveticaNeueLTStd';
-  src: url('./assets/fonts/Helvetica-Neue-LT-Std-Thin-Extended.otf') format('truetype');
+@font-face {
+  font-family: "HelveticaNeueLTStd";
+  src: url("./assets/fonts/Helvetica-Neue-LT-Std-Thin-Extended.otf")
+    format("truetype");
   font-weight: 100;
   font-style: normal;
 }
 
-@font-face { 
-  font-family: 'HelveticaNeueLTStd';
-  src: url('./assets/fonts/Helvetica-Neue-LT-Std-Roman.otf') format('truetype');
+@font-face {
+  font-family: "HelveticaNeueLTStd";
+  src: url("./assets/fonts/Helvetica-Neue-LT-Std-Roman.otf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
 
-@font-face { 
-  font-family: 'HelveticaNeueLTStdCondensed';
-  src: url('./assets/fonts/Helvetica-Neue-LT-Std-Medium-Condensed.otf') format('truetype');
+@font-face {
+  font-family: "HelveticaNeueLTStdCondensed";
+  src: url("./assets/fonts/Helvetica-Neue-LT-Std-Medium-Condensed.otf")
+    format("truetype");
   font-weight: 500;
   font-style: normal;
 }
 
-@font-face { 
-  font-family: 'HelveticaNeueLTStdCondensed';
-  src: url('./assets/fonts/Helvetica-Neue-LT-Std-Extra-Black-Condensed.otf') format('truetype');
+@font-face {
+  font-family: "HelveticaNeueLTStdCondensed";
+  src: url("./assets/fonts/Helvetica-Neue-LT-Std-Extra-Black-Condensed.otf")
+    format("truetype");
   font-weight: 900;
   font-style: normal;
+}
+
+body {
+  background: linear-gradient(180deg, #b0e2e9 0%, white 100%);
+  background-repeat: no-repeat;
+}
+
+.h-min-witout-footer {
+  height: calc(100vh - 192px);
 }

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import mockup from '../assets/img/rectangle.png';
 
 import AOS from 'aos';

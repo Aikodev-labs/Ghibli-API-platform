@@ -3,6 +3,7 @@ import TryIt from "../components/TryIt";
 import WhatAbout from "../components/WhatAbout";
 import background from "../assets/images/clouds2.svg";
 
+
 const Home = () => {
   return (
     <main className="bg-background_Blue">

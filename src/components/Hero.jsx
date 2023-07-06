@@ -15,8 +15,8 @@ const Hero = () => {
   return (
     
     <main className='min-h-screen flex items-center
-      justify-between font-sans px-[72px]
-      m-auto'>
+      justify-center font-sans px-[72px]
+      mx-auto'>
 
       <div className='px-8 flex flex-col absolute left-24 top-67 leading-[78px]'>
         <h1 className='text-[80px] font-semibold tracking-wide text-white'>

@@ -55,17 +55,17 @@ const Footer = () => {
 
             <article>
                 <div className='flex justify-end gap-4'>
-                    <div className='h-[62px] w-[62px] overflow-hidden'>
+                    <div className='h-[67px] w-[67px] overflow-hidden'>
                         <img className='w-full h-full object-contain' src={vercel} alt="vercel image" />
                     </div>
-                    <div className='h-[54px] w-[54px] overflow-hidden mt-2'>
+                    <div className='h-[59px] w-[59px] overflow-hidden mt-2'>
                         <img className='w-full h-full object-contain'src={azure} alt="azure image" />
                     </div>
                 </div>
-                <div className='flex justify-end gap-4 items-end pt-[62px] pr-2'>
-                    <BsGithub className="text-[26px]" />
-                    <BsTwitter className="text-[29px]" />
-                    <BsFillHeartFill  className="text-[25px]"/>
+                <div className='flex justify-end gap-4 items-end pt-[58px] pr-2'>
+                    <BsGithub className="text-[25px]" />
+                    <BsTwitter className="text-[28px]" />
+                    <BsFillHeartFill  className="text-[24px]"/>
                 </div>
             </article>
 

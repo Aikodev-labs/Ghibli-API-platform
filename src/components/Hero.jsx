@@ -2,6 +2,8 @@ import { useEffect } from 'react'
 
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Importa el archivo CSS de AOS
+import gatobus from '../assets/images/gatobus.png';
+
 
 
 const Hero = () => {
@@ -16,7 +18,7 @@ const Hero = () => {
       justify-between font-sans px-[72px]
       m-auto'>
 
-      <div className='px-10 flex flex-col absolute left-24 top-67 leading-[80px]'>
+      <div className='px-8 flex flex-col absolute left-24 top-67 leading-[80px]'>
         <h1 className='text-[80px] font-semibold tracking-wide text-white'>
           GHIBLI API
         </h1>
@@ -31,7 +33,7 @@ const Hero = () => {
       </div>
 
       <div className='h-[773px] w-[1249px] pb-11 overflow-hidden relative pl-[450px]' data-aos="fade-down-left" data-aos-duration="3000"  >
-        <img className='h-full w-full object-contain' src="src/assets/images/gatobus2.png" alt="hero image"/>
+        <img src={gatobus} alt="hero image" />
       </div>
     </main>
   )

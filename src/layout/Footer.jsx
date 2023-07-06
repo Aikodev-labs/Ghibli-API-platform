@@ -21,7 +21,7 @@ const Footer = () => {
             <p className='pb-14 ml-[90px]'>
                 CHARACTERS: 110
             </p>
-            <div className='ml-[250px] w-16 h-4'>
+            <div className='ml-[300px] w-16 h-4'>
                 <img className="object-contain" src="src/assets/images/ccby.png" alt="image footer" />
             </div>    
         </article>
@@ -45,7 +45,7 @@ const Footer = () => {
             </p>
             </article>
             <article className='flex items-center pb-[66px]'>
-                <p className='text-xs font-semibold'>
+                <p className='text-xs font-semibold pr-5'>
                     MOVIES: 20
                 </p>
             </article>
@@ -59,10 +59,10 @@ const Footer = () => {
                         <img className='w-full h-full object-contain'src="src/assets/images/azure.png" alt="azure image" />
                     </div>
                 </div>
-                <div className='flex justify-end gap-4 items-end pt-[62px] text-[28px] pr-1'>
-                    <BsGithub/>
-                    <BsTwitter/>
-                    <BsFillHeartFill/>
+                <div className='flex justify-end gap-4 items-end pt-[62px] pr-2'>
+                    <BsGithub className="text-[26px]" />
+                    <BsTwitter className="text-[29px]" />
+                    <BsFillHeartFill  className="text-[25px]"/>
                 </div>
             </article>
 

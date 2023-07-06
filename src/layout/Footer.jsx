@@ -1,4 +1,7 @@
 import { BsGithub,BsTwitter,BsFillHeartFill,BsFillCircleFill } from "react-icons/bs";
+import ccby from '../assets/images/ccby.png';
+import vercel from '../assets/images/vercel.png';
+import azure from '../assets/images/azure.png';
 
 const Footer = () => {
   return (
@@ -22,7 +25,7 @@ const Footer = () => {
                 CHARACTERS: 110
             </p>
             <div className='ml-[300px] w-16 h-4'>
-                <img className="object-contain" src="src/assets/images/ccby.png" alt="image footer" />
+                <img className="object-contain" src={ccby} alt="image footer" />
             </div>    
         </article>
 
@@ -53,10 +56,10 @@ const Footer = () => {
             <article>
                 <div className='flex justify-end gap-4'>
                     <div className='h-[62px] w-[62px] overflow-hidden'>
-                        <img className='w-full h-full object-contain' src="src/assets/images/vercel.png" alt="vercel image" />
+                        <img className='w-full h-full object-contain' src={vercel} alt="vercel image" />
                     </div>
                     <div className='h-[54px] w-[54px] overflow-hidden mt-2'>
-                        <img className='w-full h-full object-contain'src="src/assets/images/azure.png" alt="azure image" />
+                        <img className='w-full h-full object-contain'src={azure} alt="azure image" />
                     </div>
                 </div>
                 <div className='flex justify-end gap-4 items-end pt-[62px] pr-2'>

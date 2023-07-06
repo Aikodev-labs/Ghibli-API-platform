@@ -33,7 +33,7 @@ const Hero = () => {
       </div>
 
       <div className='h-[773px] w-[1249px] pb-11 overflow-hidden relative pl-[450px]' data-aos="fade-down-left" data-aos-duration="3000"  >
-        <img src={gatobus} alt="hero image" />
+        <img className='h-full w-full object-contain' src={gatobus} alt="hero image" />
       </div>
     </main>
   )

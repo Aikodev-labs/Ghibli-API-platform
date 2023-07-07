@@ -1,9 +1,13 @@
 import { BsGithub,BsTwitter,BsFillHeartFill,BsFillCircleFill } from "react-icons/bs";
+import ccby from '../assets/images/ccby.png';
+import vercel from '../assets/images/vercel.png';
+import azure from '../assets/images/azure.png';
 
 const Footer = () => {
   return (
     
-    <section className='grid grid-cols-6 border-t-[1px] border-gray-400 px-[72px] m-auto text-gray-800 h-48'>
+    <section className='grid grid-cols-6 border-t-[1px] border-gray-400 px-[72px]
+     m-auto text-gray-800 h-48 pt-[6px]'>
 
         <article className='text-xs text-center leading-6 pt-1'>
             <ul>
@@ -20,8 +24,8 @@ const Footer = () => {
             <p className='pb-14 ml-[90px]'>
                 CHARACTERS: 110
             </p>
-            <div className='ml-[250px] w-16 h-4'>
-                <img src="src/assets/images/ccby.png" alt="image footer" />
+            <div className='ml-[310px] w-16 h-4'>
+                <img className="object-contain" src={ccby} alt="image footer" />
             </div>    
         </article>
 
@@ -44,24 +48,24 @@ const Footer = () => {
             </p>
             </article>
             <article className='flex items-center pb-[66px]'>
-                <p className='text-xs font-semibold'>
+                <p className='text-xs font-semibold pr-5'>
                     MOVIES: 20
                 </p>
             </article>
 
             <article>
                 <div className='flex justify-end gap-4'>
-                    <div className='h-[62px] w-[62px] overflow-hidden'>
-                        <img className='w-full h-full' src="src/assets/images/vercel.png" alt="vercel image" />
+                    <div className='h-[67px] w-[67px] overflow-hidden'>
+                        <img className='w-full h-full object-contain' src={vercel} alt="vercel image" />
                     </div>
-                    <div className='h-[54px] w-[54px] overflow-hidden mt-2'>
-                        <img className='w-full h-full'src="src/assets/images/azure.png" alt="azure image" />
+                    <div className='h-[59px] w-[59px] overflow-hidden mt-2'>
+                        <img className='w-full h-full object-contain'src={azure} alt="azure image" />
                     </div>
                 </div>
-                <div className='flex justify-end gap-4 items-end pt-[62px] text-lg pr-4'>
-                    <BsGithub/>
-                    <BsTwitter/>
-                    <BsFillHeartFill/>
+                <div className='flex justify-end gap-4 items-end pt-[58px] pr-3'>
+                    <BsGithub className="text-[25px]" />
+                    <BsTwitter className="text-[28px]" />
+                    <BsFillHeartFill  className="text-[24px]"/>
                 </div>
             </article>
 

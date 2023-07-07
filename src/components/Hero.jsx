@@ -16,8 +16,8 @@ const Hero = () => {
     
     <main className='min-h-screen flex items-center
       justify-center font-sans px-[72px] mx-auto'>
-
-      <div className='flex flex-col absolute top-67 leading-[78px] pr-[680px]'>
+    
+    <div className='flex flex-col absolute top-67 leading-[78px] pr-[680px]'>
         <h1 className='text-[80px] font-semibold tracking-wide text-white'>
           GHIBLI API
         </h1>
@@ -31,9 +31,11 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className='h-[773px] w-[1249px] pb-11 overflow-hidden relative pl-[450px]' data-aos="fade-down-left" data-aos-duration="3000"  >
+      <div className='h-[773px] w-[1249px] pb-11 overflow-hidden relative pl-[450px]'
+        data-aos="fade-down-left" data-aos-duration="3000"  >
         <img className='h-full w-full object-contain' src={gatobus} alt="hero image" />
       </div>
+    
     </main>
   )
 }

@@ -5,11 +5,11 @@ import azure from '../assets/images/azure.png';
 
 const Footer = () => {
   return (
-    
-    <section className='grid grid-cols-6 border-t-[1px] border-gray-400 px-[72px]
-     m-auto text-gray-800 h-48 pt-[6px]'>
 
-        <article className='text-xs text-center leading-6 pt-1'>
+    <section className='max-w-[1366px] border-t-[1px] border-gray-400 px-[72px]
+     mx-auto text-gray-800 h-48 pt-[6px] flex justify-between'>
+        
+        <article className='text-[16px] font-normal text-center leading-6 flex'>
             <ul>
                 <li>NAVIGATION</li>
                 <li>HOME</li>
@@ -20,41 +20,40 @@ const Footer = () => {
             </ul>
         </article>
 
-        <article className='font-semibold text-xs flex items-center flex-col mt-[57px]'>
-            <p className='pb-14 ml-[90px]'>
-                CHARACTERS: 110
-            </p>
-            <div className='ml-[310px] w-16 h-4'>
-                <img className="object-contain" src={ccby} alt="image footer" />
-            </div>    
-        </article>
-
-        <article className='pt-2 col-span-2'>
-            <p className='text-xs font-semibold flex gap-1 pl-[130px]'>
-                STATUS SERVER
+        <article>
+            <h3 className='text-[18px] font-medium flex gap-1 justify-center'>
+            STATUS SERVER
                 <span className='text-green-500 text-[7px] pt-[4px]'>
                 <BsFillCircleFill/>
                 </span>
-            </p>  
-            <p className='text-xs font-semibold mt-8 pl-[130px]'>
+            </h3>
+            <div className="grid grid-cols-3 text-[18px] font-medium pt-9 gap-16">
+                <h3>
+                CHARACTERS: 110
+                </h3>
+                <h3>
                 LOCATIONS: 123
-            </p>
-            <p className='text-[8px] font-semibold mt-[54px] ml-[95px]'>
+                </h3>
+                <h3>
+                MOVIES: 20
+                </h3>
+            </div>
+            <div className="flex justify-center gap-3">
+            <img className="object-contain pt-8" src={ccby} alt="image footer" />
+            <div>
+            <p className='text-[10px] font-semibold mt-[54px]'>
                 Ghibli Api by Aiko is licensed under a <span className='border-b-[1px] border-gray-800'>
                     Creative Commons</span>
             </p>
-            <p className='text-[8px] font-semibold ml-[95px]'>
-               <span className='border-b-[1px] border-gray-800'>Reconocimiento 4.0 Internacional License.</span>
+            <p className='text-[10px] font-semibold pb-2'>
+                <span className='border-b-[1px] border-gray-800'>Reconocimiento 4.0 Internacional License.</span>
             </p>
-            </article>
-            <article className='flex items-center pb-[66px]'>
-                <p className='text-xs font-semibold pr-5'>
-                    MOVIES: 20
-                </p>
-            </article>
+            </div>
+            </div>
+        </article>
 
-            <article>
-                <div className='flex justify-end gap-4'>
+        <article>
+        <div className='flex justify-end gap-4'>
                     <div className='h-[67px] w-[67px] overflow-hidden'>
                         <img className='w-full h-full object-contain' src={vercel} alt="vercel image" />
                     </div>
@@ -67,12 +66,10 @@ const Footer = () => {
                     <BsTwitter className="text-[28px]" />
                     <BsFillHeartFill  className="text-[24px]"/>
                 </div>
-            </article>
+        </article>
 
     </section>    
-        
-    
-    
+      
   )
 }
 

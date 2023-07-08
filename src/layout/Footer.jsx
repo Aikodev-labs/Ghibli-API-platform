@@ -8,8 +8,8 @@ const Footer = () => {
 
     <section className='border-t-[1px] border-gray-400 px-[72px]'>
 
-     <div className="max-w-[1260px] mx-auto text-gray-700 h-[225px] pt-[6px] flex justify-between">
-        <article className='text-[16px] font-normal text-center leading-7 flex pt-1'>
+     <div className="max-w-[1260px] mx-auto text-gray-800 h-[225px] pt-[6px] flex justify-between">
+        <article className='text-[16px] font-normal text-center leading-7 flex pt-1 text-gray'>
             <ul>
                 <li>NAVIGATION</li>
                 <li>HOME</li>

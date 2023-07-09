@@ -1,5 +1,3 @@
-import { useEffect } from 'react'
-
 import { Card } from './Card'
 
 import AosProvider from "../components/AosProvider";
@@ -8,7 +6,7 @@ const TryIt = () => {
 
   return (
     <AosProvider fade="fade-up" duration={1000} >
-      <section className=' max-w-[1366px] h-auto m-auto mb-20' >
+      <section className=' max-w-[1366px] h-auto m-auto py-20' >
         <h1 className='text-[50px] text-center font-extrabold tracking-tighter text-[#083344]' >TRY IT</h1>
         <p className='text-[30px] text-center font-semibold tracking-tighter text-[#0E7490] ' >Run this code to get a random card.</p>
 

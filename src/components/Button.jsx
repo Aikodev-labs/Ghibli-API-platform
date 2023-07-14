@@ -20,20 +20,20 @@ const Button = ({ text, type, size }) => {
   const getSize = () => {
     switch (size) {
       case "s":
-        return "w-32 h-8 text-sm";
+        return "px-4 text-sm";
         break;
       case "m":
-        return "w-40 h-10 text-base";
+        return "px-4 text-base";
         break;
       case "l":
-        return "w-48 h-11 text-lg";
+        return "px-8 text-lg";
         break;
       default:
-        return "w-32 h-8 text-sm";
+        return "text-sm";
     }
   };
 
-  const buttonClasses = `${getType()} ${getSize()} rounded-full text-center px-4 py-2 justify-center items-center inline-flex`;
+  const buttonClasses = `${getType()} ${getSize()} rounded-full text-center py-2 justify-center items-center inline-flex`;
 
   return (
     /*Ejemplo de uso <Button text='TEXTO' type="primary" size="s"></Buttton>*/

@@ -3,12 +3,14 @@ import gatobus from "../assets/images/gatobus.png";
 
 const Hero = () => {
   return (
+
     <main
       className="min-h-screen flex items-center
     justify-center font-sans px-[72px] mx-auto"
     >
       <div className="flex flex-col absolute top-67 leading-[78px] pr-[680px]">
         <h1 className="text-[80px] font-semibold tracking-wide text-white">
+
           GHIBLI API
         </h1>
         <h2 className="text-[45px] font-medium pl-6 text-white opacity-70">
@@ -21,6 +23,7 @@ const Hero = () => {
         </div>
       </div>
 
+
       <div
         className="h-[773px] w-[1249px] pb-11 overflow-hidden relative pl-[450px]"
       >
@@ -29,7 +32,9 @@ const Hero = () => {
           src={gatobus}
           alt="hero image"
         />
+
       </div>
+    
     </main>
   );
 };

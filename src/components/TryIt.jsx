@@ -5,6 +5,7 @@ import 'aos/dist/aos.css'; // Importa el archivo CSS de AOS
 import { Card } from './Card'
 
 
+
 const TryIt = () => {
 
   useEffect(() => {
@@ -36,6 +37,7 @@ const TryIt = () => {
               null
             </p>
           </div>
+          
         </div>
 
         {/* Contenedor de card. */}

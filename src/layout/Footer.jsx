@@ -3,6 +3,9 @@ import ccby from '../assets/images/ccby.png';
 import vercel from '../assets/images/vercel.png';
 import azure from '../assets/images/azure.png';
 
+
+
+
 const Footer = () => {
   return (
 
@@ -53,7 +56,7 @@ const Footer = () => {
                 </div>
             </div>
         </article>
-
+        
         <article>
         <div className='flex justify-end gap-4'>
                     <div className='h-[70px] w-[70px] overflow-hidden'>
@@ -69,6 +72,7 @@ const Footer = () => {
                     <BsFillHeartFill  className="text-[24px]"/>
                 </div>
         </article>
+        
        </div>
     </section>    
   

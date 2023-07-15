@@ -6,6 +6,8 @@ import 'aos/dist/aos.css'; // Importa el archivo CSS de AOS
 
 
 
+
+
 const WhatAbout = () => {
 
   useEffect(() => {
@@ -23,6 +25,7 @@ const WhatAbout = () => {
                 <p>Lorem <span className='text-cyan-900'>ipsum dolor sit amet</span>, consectetur adipiscing elit. Donec vel pretium felis. Morbi ac felis blandit, tristique erat vel, tristique quam.</p>
                 <br></br>
                 <p>Lorem <span className='text-cyan-900'> ipsum dolor sit amet</span>, consectetur adipiscing elit. Donec vel pretium felis. Morbi ac felis blandit, tristique erat vel, tristique quam.</p>
+                
             </div>
             <img data-aos="flip-right" src={mockup}></img>
            

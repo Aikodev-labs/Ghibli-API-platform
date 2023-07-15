@@ -7,6 +7,7 @@ import Doc from "./pages/Doc";
 
 
 
+
 function App() {
 
   
@@ -19,7 +20,7 @@ function App() {
         <Route path="/" element={<Home/>}/>
         <Route path="/docs" element={<Doc />}/>
       </Routes>
-
+      
       <Footer />
     </BrowserRouter>
   )

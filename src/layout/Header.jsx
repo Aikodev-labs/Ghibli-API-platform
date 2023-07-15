@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 
 const Header = () => {
   const pages = [
@@ -9,23 +9,27 @@ const Header = () => {
     { name: "TEAM", path: "/team" },
   ];
 
-  const detectPath = () => {
-    const currentPath = window.location.pathname
-    return currentPath
-  }
 
-  const [currentPath, setCurrentPath] = useState("")
+  const location = useLocation()
 
   useEffect(() => {
-    setCurrentPath(detectPath())
-  }, [setCurrentPath])
+    console.log("Ruta actual:", location.pathname)
+  }, [location])
   
 
   return (
 
-    <header className= {`flex items-center absolute z-10 top-0 left-0 w-full  h-[113px]
-    
-    ${ currentPath === "/" ? "text-[#fafafa]" : currentPath === "/docs" ? "text-[#0E7490]" : "" }`}>
+    <header className= {`flex items-center absolute z-10 top-0 left-0 w-full  h-[113px] text-[#fafafa]
+      ${ 
+        /* Estilos dinamicos del Navbar */
+        location.pathname === "/" ? "text-[#fafafa]" 
+        : location.pathname === "/docs" ? "text-black"
+        : location.pathname === "/about" ? "text-red-400"
+        : location.pathname === "/team" ? "text-green-900" : ""
+        
+      }`}>
+      
+      
       <div className="max-w-[1366px] mx-auto">
         <nav className="flex justify-center items-center w-full h-full">
           <h1 className="font-bold text-[30px] ">
@@ -36,8 +40,11 @@ const Header = () => {
               <li className="group font-medium text-[22px]  " key={index}>
                 <NavLink 
                   to={page.path} 
-                  className={({isActive}) => isActive && detectPath() === "/" ? (console.log(detectPath()), "bg-purple-900 rounded-md p-1") 
-                  : isActive && detectPath() === "/docs" ? (console.log(detectPath()), "bg-[#083344] rounded-md p-1 text-white") : ""} > {page.name}
+                  className={({isActive}) => isActive && location.pathname === "/" ? ("bg-purple-900 rounded-md p-1") 
+                  : isActive && location.pathname === "/docs" ? ("bg-[#083344] rounded-md p-1 text-white")
+                  : isActive && location.pathname === "/about" ? ("bg-[#083344] rounded-md p-1 text-white")
+                  : isActive && location.pathname === "/team" ? ("bg-[#083344] rounded-md p-1 text-white") : ""}
+                  > {page.name}
 
                   {/* En caso de agregarse mas rutas con distintos estilos de navbar, es acá donde hay que trabajar */}
                 </NavLink>

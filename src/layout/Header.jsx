@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
 
 const Header = () => {
@@ -11,21 +11,14 @@ const Header = () => {
 
 
   const location = useLocation()
-
-  useEffect(() => {
-    console.log("Ruta actual:", location.pathname)
-  }, [location])
   
 
   return (
 
-    <header className= {`flex items-center absolute z-10 top-0 left-0 w-full  h-[113px] text-[#fafafa]
+    <header className= {`flex items-center absolute z-10 top-0 left-0 w-full  h-[113px]
       ${ 
         /* Estilos dinamicos del Navbar */
-        location.pathname === "/" ? "text-[#fafafa]" 
-        : location.pathname === "/docs" ? "text-black"
-        : location.pathname === "/about" ? "text-red-400"
-        : location.pathname === "/team" ? "text-green-900" : ""
+        location.pathname === "/" ? "text-[#fafafa]" : "text-black"
         
       }`}>
       
@@ -38,7 +31,7 @@ const Header = () => {
           <ul className="flex gap-10 mr-60 px-24 font-helvetica relative">
             {pages.map((page, index) => (
               <li className="group font-medium text-[22px]  " key={index}>
-                <NavLink 
+                <NavLink
                   to={page.path} 
                   className={({isActive}) => isActive && location.pathname === "/" ? ("bg-purple-900 rounded-md p-1") 
                   : isActive && location.pathname === "/docs" ? ("bg-[#083344] rounded-md p-1 text-white")
@@ -46,7 +39,7 @@ const Header = () => {
                   : isActive && location.pathname === "/team" ? ("bg-[#083344] rounded-md p-1 text-white") : ""}
                   > {page.name}
 
-                  {/* En caso de agregarse mas rutas con distintos estilos de navbar, es acá donde hay que trabajar */}
+                  {/* En caso de agregarse mas rutas con distintos estilos de navbar, es acá donde hay que trabajar*/}
                 </NavLink>
                 <div
                   className={`

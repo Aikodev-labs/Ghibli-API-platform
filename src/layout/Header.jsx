@@ -18,7 +18,7 @@ const Header = () => {
     <header className= {`flex items-center absolute z-10 top-0 left-0 w-full  h-[113px]
       ${ 
         /* Estilos dinamicos del Navbar */
-        location.pathname === "/" ? "text-[#fafafa]" : "text-black"
+        location.pathname === "/" ? "text-[#fafafa]" : "text-cyan700"
         
       }`}>
       
@@ -41,20 +41,6 @@ const Header = () => {
 
                   {/* En caso de agregarse mas rutas con distintos estilos de navbar, es acá donde hay que trabajar*/}
                 </NavLink>
-                <div
-                  className={`
-                ${
-                  index === 0
-                    ? "w-[65px] h-1 bg-purple-900 rounded absolute top-7 left-22 opacity-0 group-hover:opacity-100 group-hover:animate-pulse"
-                    : index === 1
-                    ? "w-[63px] h-1 bg-purple-900 rounded absolute top-7 left-50 opacity-0 group-hover:opacity-100 group-hover:animate-pulse"
-                    : index === 2
-                    ? "w-[73px] h-1 bg-purple-900 rounded absolute top-7 right-50 opacity-0 group-hover:opacity-100 group-hover:animate-pulse"
-                    : index === 3
-                    ? "w-[65px] h-1 bg-purple-900 rounded absolute top-7 right-34 opacity-0 group-hover:opacity-100 group-hover:animate-pulse"
-                    : ""
-                }    `}
-                ></div>
               </li>
               
             ))}

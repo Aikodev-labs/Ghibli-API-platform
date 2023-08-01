@@ -11,7 +11,7 @@ extend: {
         'cyan700': "#0E7490",
         'cyan950': "#083344",
         'neutral50': "#FFFFF",
-        'netrual700': "#404040"
+        'neutral700': "#404040"
     },
     fontFamily:{
         'helvetica': ['Helvetica', 'sans-serif'],

@@ -2,6 +2,7 @@ import { Card } from './Card'
 
 import AosProvider from "../components/AosProvider";
 import { useEffect, useState } from 'react';
+import Button from './Button';
 
 const TryIt = () => {
 
@@ -54,11 +55,9 @@ const TryIt = () => {
               </p>
             </div>
 
-            {/* Nota: La logica de este button debe ser trasladado al boton inteligente que hizo Desi. */}
-            <button className='w-[137px] h-[39px] bg-[#0D9488] hover:bg-[#096b63] transition-all duration-150 text-[#FFFFFF] rounded-full mt-5 absolute right-0 '
-                    onClick={handleClick} >
-              RUN SCRIPT
-            </button>
+            <div className='absolute right-0 mt-3'>
+            <Button text='RUN SCRIPT' type='secondary' size='m' onClick={handleClick}></Button>
+            </div>
 
             <div className='w-full h-[130px] bg-[#083344] mt-28' >
               <p className='text-[#FFFFFF] w-[659px] h-full m-auto py-4 font-mono text-xl '>

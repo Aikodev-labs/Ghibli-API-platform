@@ -2,6 +2,7 @@ import { Card } from './Card'
 
 import AosProvider from "../components/AosProvider";
 
+
 const TryIt = () => {
 
   return (
@@ -48,6 +49,7 @@ const TryIt = () => {
 
             <button className='w-[180px] h-[43px] bg-[#7E22CE] hover:bg-[#54178a] transition-all duration-150 rounded-full text-center text-[#FFFFFF] text-lg mt-2 ' > GET STARTED </button>
           </div>
+          
         </div>
 
 

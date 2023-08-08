@@ -11,6 +11,10 @@ import Team from "./pages/Team";
 
 
 
+
+
+
+
 function App() {
 
   
@@ -25,7 +29,7 @@ function App() {
         <Route path="/about" element={<About />}/>
         <Route path="/team" element={<Team />}/>
       </Routes>
-
+      
       <Footer />
     </BrowserRouter>
   )

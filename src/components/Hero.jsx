@@ -1,6 +1,7 @@
 import gatobus from "../assets/images/gatobus.png";
 
 
+
 const Hero = () => {
   return (
 

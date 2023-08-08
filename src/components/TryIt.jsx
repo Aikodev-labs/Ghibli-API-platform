@@ -4,6 +4,7 @@ import AosProvider from "../components/AosProvider";
 import { useEffect, useState } from 'react';
 import Button from './Button';
 
+
 const TryIt = () => {
 
   const randomMovie = 'https://ghibli-api-v1.azurewebsites.net/api/v1/movies/randomMovie'
@@ -85,6 +86,7 @@ const TryIt = () => {
                GET STARTED
             </button>
           </div>
+          
         </div>
 
 

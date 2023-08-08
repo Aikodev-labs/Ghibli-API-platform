@@ -1,6 +1,7 @@
 import gatobus from "../assets/images/gatobus.png";
 import Button from './Button';
 
+
 const Hero = () => {
   return (
 

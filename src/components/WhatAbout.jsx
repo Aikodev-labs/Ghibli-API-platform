@@ -4,6 +4,8 @@ import mockup from '../assets/img/rectangle.png';
 import AosProvider from "../components/AosProvider";
 
 
+
+
 const WhatAbout = () => {
 
 
@@ -18,6 +20,7 @@ const WhatAbout = () => {
                 <p>Lorem <span className='text-cyan-900'>ipsum dolor sit amet</span>, consectetur adipiscing elit. Donec vel pretium felis. Morbi ac felis blandit, tristique erat vel, tristique quam.</p>
                 <br></br>
                 <p>Lorem <span className='text-cyan-900'> ipsum dolor sit amet</span>, consectetur adipiscing elit. Donec vel pretium felis. Morbi ac felis blandit, tristique erat vel, tristique quam.</p>
+                
             </div>
             <img src={mockup}></img>
           

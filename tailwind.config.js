@@ -6,6 +6,12 @@ theme: {
 extend: {
     colors : {
         background_Blue:"#B0E2E9",
+        'teal600': "#0D9488",
+        'purple700': "#7E22CE",
+        'cyan700': "#0E7490",
+        'cyan950': "#083344",
+        'neutral50': "#FFFFF",
+        'neutral700': "#404040"
     },
     fontFamily:{
         'helvetica': ['Helvetica', 'sans-serif'],

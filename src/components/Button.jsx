@@ -1,6 +1,7 @@
 import React from "react";
 
-const Button = ({ text, type, size }) => {
+
+const Button = ({ text, type, size, onClick }) => {
   const getType = () => {
     switch (type) {
       case "primary":
@@ -37,7 +38,9 @@ const Button = ({ text, type, size }) => {
 
   return (
     /*Ejemplo de uso <Button text='TEXTO' type="primary" size="s"></Buttton>*/
-    <button className={buttonClasses}>{text}</button>
+
+    <button className={buttonClasses} onClick={onClick} >{text}</button>
   );
 };
 export default Button;
+

@@ -1,5 +1,5 @@
 import gatobus from "../assets/images/gatobus.png";
-
+import Button from './Button';
 
 
 const Hero = () => {
@@ -18,13 +18,11 @@ const Hero = () => {
           スタジオジブリ API
         </h2>
         <div className="flex justify-center pt-4">
-          <button className="bg-purple-700 rounded-2xl text-sm text-white px-[17px] py-[6px]">
-            GET STARTED
-          </button>
+          <Button text="GET STARTED" size="l" type="primary"></Button>
         </div>
       </div>
 
-
+    {/* FIXME: el siguente componente interfiere con el button*/}
       <div
         className="h-[773px] w-[1249px] pb-11 overflow-hidden relative pl-[450px]"
       >

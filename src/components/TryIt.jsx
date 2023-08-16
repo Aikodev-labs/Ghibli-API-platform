@@ -60,7 +60,7 @@ const TryIt = () => {
             <Button text='RUN SCRIPT' type='secondary' size='m' onClick={handleClick}></Button>
             </div>
 
-            <div className='w-full h-[130px] bg-[#083344] mt-28' >
+            <div className='w-full h-[130px] bg-[#083344] mt-28 rounded-md' >
               <p className='text-[#FFFFFF] w-[659px] h-full m-auto py-4 font-mono text-xl '>
                 null
               </p>

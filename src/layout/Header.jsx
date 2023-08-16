@@ -1,5 +1,7 @@
 import { useEffect } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
+import Button from '../components/Button';
+
 
 const Header = () => {
   const pages = [
@@ -28,27 +30,24 @@ const Header = () => {
           <h1 className="font-bold text-[30px] ">
             <Link to="/">AIKODEV</Link>
           </h1>
-          <ul className="flex gap-10 mr-60 px-24 font-helvetica relative">
-            {pages.map((page, index) => (
-              <li className="group font-medium text-[22px]  " key={index}>
-                <NavLink
-                  to={page.path} 
-                  className={({isActive}) => isActive && location.pathname === "/" ? ("bg-purple-900 rounded-md p-1") 
-                  : isActive && location.pathname === "/docs" ? ("bg-[#083344] rounded-md p-1 text-white")
-                  : isActive && location.pathname === "/about" ? ("bg-[#083344] rounded-md p-1 text-white")
-                  : isActive && location.pathname === "/team" ? ("bg-[#083344] rounded-md p-1 text-white") : ""}
-                  > {page.name}
+            <ul className="flex gap-12 mr-60 px-24 font-neuelt relative">
+              {pages.map((page, index) => (
+                <li className="group font-medium text-[22px]  " key={index}>
+                  <NavLink
+                    to={page.path} 
+                    className={({isActive}) => isActive && location.pathname === "/" ? ("bg-purple-900 rounded-md p-1") 
+                    : isActive && location.pathname === "/docs" ? ("bg-[#083344] rounded-md  p-1 text-white")
+                    : isActive && location.pathname === "/about" ? ("bg-[#083344] rounded-md  p-1 text-white")
+                    : isActive && location.pathname === "/team" ? ("bg-[#083344] rounded-md  p-1 text-white") : ""}
+                    > {page.name}
 
                   {/* En caso de agregarse mas rutas con distintos estilos de navbar, es acá donde hay que trabajar*/}
-                </NavLink>
-              </li>
+                  </NavLink>
+                </li>
               
-            ))}
-          </ul>
-
-          <button className="font-helvetica font-normal text-[18px] border rounded-full p-2 px-6 ">
-            SUPPORT US
-          </button>
+                ))}
+            </ul>
+            <Button text="SUPPORT US" type={location.pathname==='/'? 'outline': 'outline_blue'} size='l'></Button>
         </nav>
       </div>
     </header>

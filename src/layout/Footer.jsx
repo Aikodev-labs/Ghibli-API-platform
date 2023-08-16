@@ -30,7 +30,7 @@ const Footer = () => {
                     <BsFillCircleFill/>
                 </span>
             </h3>
-            <div className="grid grid-cols-3 text-[18px]  pt-8 gap-24 pr-4">
+            <div className="grid grid-cols-3 text-[18px]  pt-8 gap-24 pr-2">
                 <h3>
                     CHARACTERS: 110
                 </h3>

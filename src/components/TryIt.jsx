@@ -39,8 +39,8 @@ const TryIt = () => {
   return (
     <AosProvider fade="fade-up" duration={1000} >
       <section className=' max-w-[1366px] h-auto m-auto py-20' >
-        <h1 className='text-[50px] text-center font-extrabold tracking-tighter text-[#083344]' >TRY IT</h1>
-        <p className='text-[30px] text-center font-semibold tracking-tighter text-[#0E7490] ' >Run this code to get a random card.</p>
+        <h1 className='text-[50px] text-center font-extrabold text-cyan950 font-neue-ltcd' >TRY IT</h1>
+        <p className='text-[30px] text-center font-medium text-cyan700 font-neue-ltcd' >Run this code to get a random card.</p>
 
 
         {/* Contenedor de scripts y card */}
@@ -48,8 +48,8 @@ const TryIt = () => {
 
           {/* Contenedor de scripts */}
           <div className='w-[717px] h-[auto] relative pt-14 ' >
-            <div className='w-full h-[130px] bg-[#083344] rounded-md ' >
-              <p className='text-[#FFFFFF] w-[659px] h-full m-auto py-4 font-mono text-xl ' >
+            <div className='w-full h-[130px] bg-cyan950 rounded-md ' >
+              <p className='text-neutral50 w-[659px] h-full m-auto py-4 font-mono text-xl ' >
               fetch('https://ghibli.vercel.app/api/random')
               .then(response =&gt; response.json()) <br />
               .then(card =&gt; console.log(card))
@@ -60,8 +60,8 @@ const TryIt = () => {
             <Button text='RUN SCRIPT' type='secondary' size='m' onClick={handleClick}></Button>
             </div>
 
-            <div className='w-full h-[130px] bg-[#083344] mt-28 rounded-md' >
-              <p className='text-[#FFFFFF] w-[659px] h-full m-auto py-4 font-mono text-xl '>
+            <div className='w-full h-[130px] bg-cyan950 mt-28 rounded-md' >
+              <p className='text-neutral50 w-[659px] h-full m-auto py-4 font-mono text-xl '>
                 null
               </p>
             </div>
@@ -77,14 +77,12 @@ const TryIt = () => {
 
         <div className='flex justify-end w-full h-20 mt-16'>
           <div className='w-[394px] mr-16 text-center' >
-            <p className='font-semibold text-lg text-[#083344] ' > 
-              <span className='text-[#0E7490] ' >EXPLORE</span> DOCUMENTATION <span className='text-[#0E7490]' >NOW!</span>
+            <p className='font-medium text-2xl text-cyan950 font-neue-ltcd' > 
+              <span className='text-cyan700 ' >EXPLORE</span> DOCUMENTATION <span className='text-cyan700' >NOW!</span>
             </p>
 
-
-            <button className='w-[180px] h-[43px] bg-[#7E22CE] hover:bg-[#54178a] transition-all duration-150 rounded-full text-center text-[#FFFFFF] text-lg mt-2 ' >
-               GET STARTED
-            </button>
+            <Button text='GET STARTED'size="l" type="primary"></Button>
+        
           </div>
           
         </div>

@@ -30,15 +30,15 @@ const Header = () => {
           <h1 className="font-bold text-[30px] ">
             <Link to="/">AIKODEV</Link>
           </h1>
-            <ul className="flex gap-12 mr-60 px-24 font-neuelt relative">
+            <ul className="flex gap-12 mr-60 px-24 fS relative font-neue-ltcd">
               {pages.map((page, index) => (
-                <li className="group font-medium text-[22px]  " key={index}>
+                <li className="group font-medium text-[25px]  " key={index}>
                   <NavLink
                     to={page.path} 
                     className={({isActive}) => isActive && location.pathname === "/" ? ("bg-purple-900 rounded-md p-1") 
-                    : isActive && location.pathname === "/docs" ? ("bg-[#083344] rounded-md  p-1 text-white")
-                    : isActive && location.pathname === "/about" ? ("bg-[#083344] rounded-md  p-1 text-white")
-                    : isActive && location.pathname === "/team" ? ("bg-[#083344] rounded-md  p-1 text-white") : ""}
+                    : isActive && location.pathname === "/docs" ? ("bg-cyan950 rounded-md  p-1 text-neutral50")
+                    : isActive && location.pathname === "/about" ? ("bg-cyan950 rounded-md  p-1 text-neutral50")
+                    : isActive && location.pathname === "/team" ? ("bg-cyan950 rounded-md  p-1 text-neutral50") : ""}
                     > {page.name}
 
                   {/* En caso de agregarse mas rutas con distintos estilos de navbar, es acá donde hay que trabajar*/}

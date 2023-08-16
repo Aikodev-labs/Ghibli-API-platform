@@ -39,7 +39,7 @@ const Button = ({ text, type, size, onClick }) => {
     }
   };
 
-  const buttonClasses = `${getType()} ${getSize()} rounded-full text-center py-2 justify-center items-center inline-flex`;
+  const buttonClasses = `${getType()} ${getSize()} rounded-full text-center py-2 justify-center items-center inline-flex font-neue-lt `;
 
   return (
     /*Ejemplo de uso <Button text='TEXTO' type="primary" size="s"></Buttton>*/

@@ -10,7 +10,7 @@ extend: {
         'purple700': "#7E22CE",
         'cyan700': "#0E7490",
         'cyan950': "#083344",
-        'neutral50': "#FFFFF",
+        'neutral50': "#FFFFFF",
         'neutral700': "#404040"
     },
     fontFamily:{

@@ -10,8 +10,9 @@ export const Card = ({movieData}) => {
   
   return (
     <>
-      <div className=' w-[394px] h-[477px] rounded shadow-lg bg-neutral50'>
-          <div className='w-full h-50 '> <img className='rounded-t' src={image}  /></div>
+      <div className=' w-[394px] h-[477px] rounded shadow-lg bg-white'>
+          <div className='w-full h-1/2 rounded-t bg-cover bg-[center_top_24rem]' style={{ backgroundImage: `url(${image})` }}> 
+          </div>
             <div className='m-5'>
                 <span className='text-lg font-medium font-neue-lt'> {title.es} | {title.jp} </span>
                 <div className='text-base font-light py-4'>

@@ -8,8 +8,13 @@ const Button = ({ text, type, size, onClick }) => {
         return "bg-purple-700 text-white hover:bg-purple-800 "; /*Boton morado */
         break;
       case "outline":
-        return "outline outline-2 outline-white text-white"; /*Sin fondo solo de linea */
+        return "outline outline-1 outline-white text-white"; /*Sin fondo solo de linea */
         break;
+
+      case "outline_blue":
+        return "outline outline-1 outline-cyan700 text-cyan700"; /*Sin fondo solo de linea */
+        break;   
+
       case "secondary":
         return "bg-teal-600 text-white hover:bg-teal-700"; /*Boton verde*/
         break;
@@ -34,7 +39,7 @@ const Button = ({ text, type, size, onClick }) => {
     }
   };
 
-  const buttonClasses = `${getType()} ${getSize()} rounded-full text-center py-2 justify-center items-center inline-flex`;
+  const buttonClasses = `${getType()} ${getSize()} rounded-full text-center py-2 justify-center items-center inline-flex font-neue-lt `;
 
   return (
     /*Ejemplo de uso <Button text='TEXTO' type="primary" size="s"></Buttton>*/

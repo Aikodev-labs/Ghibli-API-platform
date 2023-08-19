@@ -7,22 +7,21 @@ const Hero = () => {
 
     <main
       className="min-h-screen flex items-center
-    justify-center font-sans px-[72px] mx-auto"
+    justify-center font-sans px-[72px] mx-auto "
     >
-      <div className="flex flex-col absolute top-67 leading-[78px] pr-[680px]">
+      
+      <div className="flex flex-col absolute top-67 leading-[78px] pr-[718px]">
         <h1 className="text-[80px] font-semibold tracking-wide text-white">
-
           GHIBLI API
         </h1>
         <h2 className="text-[45px] font-medium pl-6 text-white opacity-70">
           スタジオジブリ API
         </h2>
-        <div className="flex justify-center pt-4">
+        <div className="flex justify-center pt-4 z-10">
           <Button text="GET STARTED" size="l" type="primary"></Button>
         </div>
       </div>
 
-    {/* FIXME: el siguente componente interfiere con el button*/}
       <div
         className="h-[773px] w-[1249px] pb-11 overflow-hidden relative pl-[450px]"
       >

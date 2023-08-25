@@ -1,11 +1,14 @@
+import { useEffect } from 'react';
 
 
 export const Card = ({movieData}) => {
 
-  if (movieData == null){
-    return "Loading..."
+  if (movieData === null ){
+    return "Loading"
   }
+  
 
+  
   const { title, director, producer, image, running_time } = movieData
   
   return (

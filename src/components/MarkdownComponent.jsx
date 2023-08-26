@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
-import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
+import ReactMarkdown from 'react-markdown'
+
 
 
 
@@ -9,7 +10,7 @@ const MarkdownComponent = () => {
   const [mdText, setmdText] = useState("");
 
   useEffect(() => {
-     fetch('/src/components/markdown/MarkdownText.md')
+     fetch('../docs/MarkdownComponent.md')
      .then(response => response.text())
      .then(data => setmdText(data))
      
@@ -18,7 +19,9 @@ const MarkdownComponent = () => {
 
   return (
   
-      <ReactMarkdown children={mdText} />
+    <ReactMarkdown className="markdown">
+    {mdText}
+  </ReactMarkdown>
     
   )
 }

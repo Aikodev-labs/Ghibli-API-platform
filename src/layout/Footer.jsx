@@ -10,10 +10,10 @@ import azure from '../assets/images/azure.png';
 const Footer = () => {
   return (
 
-    <section className='border-t-[1px] border-gray-400 px-[72px]'>
+    <section className='border-t-[1px] border-gray-400 px-[72px] font-neue-ltcd'>
 
      <div className="max-w-[1260px] mx-auto text-gray-800 h-[225px] pt-[6px] flex justify-between">
-        <article className='text-[16px] font-normal text-center leading-7 flex pt-1 text-gray'>
+        <article className='text-[16px] font-light text-center leading-7 flex pt-1 text-gray font-neue-lt'>
             <ul>
                 <li>NAVIGATION</li>
                 <li>HOME</li>
@@ -24,14 +24,14 @@ const Footer = () => {
             </ul>
         </article>
 
-        <article className="pt-1">
-            <h3 className='text-[18px] font-medium flex gap-1 justify-center'>
+        <article className="pt-1  font-medium flex flex-col pl-6">
+            <h3 className='text-[18px] flex gap-1 justify-center  '>
             STATUS SERVER
                 <span className='text-green-500 text-[8px] pt-2'>
                     <BsFillCircleFill/>
                 </span>
             </h3>
-            <div className="grid grid-cols-3 text-[18px] font-medium pt-8 gap-24">
+            <div className="grid grid-cols-3 text-[18px]  pt-8 gap-24 pr-2">
                 <h3>
                     CHARACTERS: 110
                 </h3>
@@ -43,16 +43,9 @@ const Footer = () => {
                 </h3>
             </div>
             <div className="flex justify-center gap-3">
-                <img className="object-contain pt-12" src={ccby} alt="image footer" />
-                <div className="pr-16">
-                    <p className='text-[10px] font-semibold mt-[48px]'>
-                        Ghibli Api by Aiko is licensed under a <span className='border-b-[1px] border-gray-800'>
-                        Creative Commons</span>
-                    </p>
-                    <p className='text-[10px] font-semibold'>
-                    <span className='border-b-[1px] border-gray-800'>
-                        Reconocimiento 4.0 Internacional License.
-                    </span>
+                <div className="pl-1 pt-14">
+                    <p className='text-[12px] font-mediummt-[48px]'>
+                    <p>&copy; 2023 AikoDev. All rights reserved.</p>
                     </p>
                 </div>
             </div>

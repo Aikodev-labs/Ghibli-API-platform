@@ -25,18 +25,12 @@ const transparentBackgroundStyle = {
 };
 
 const HighlighterComponent = (props) => {
-
-  
   return (
-
     <div>
-
-    <SyntaxHighlighter language={props.language} style={transparentBackgroundStyle}>
-      {props.code}
-    </SyntaxHighlighter>
+      <SyntaxHighlighter language={props.language} style={transparentBackgroundStyle}>
+        {props.code}
+      </SyntaxHighlighter>
   </div>
-  
-  
   )
 }
 

@@ -3,6 +3,7 @@ import { Card } from './Card'
 import AosProvider from "../components/AosProvider";
 import { useEffect, useState } from 'react';
 import Button from './Button';
+import TotoroLoader from './TotoroLoader'
 
 
 const TryIt = () => {
@@ -10,15 +11,19 @@ const TryIt = () => {
   const randomMovie = 'https://ghibli-api-v1.azurewebsites.net/api/v1/movies/randomMovie'
 
   const [movieData, setMovieData] = useState(null)
+  const [loading, setLoading] = useState(false)
 
   const getRandomMovie = async () => {
     try {
+        setLoading(true)
         const response = await fetch(randomMovie);
         const data = await response.json();
         setMovieData(data.data)
+        setLoading(false)
         return data;
     } catch (error) {
         console.error(error);
+        setLoading(false)
     }
   }
 
@@ -27,12 +32,8 @@ const TryIt = () => {
   }
 
   useEffect(() => {
-    //De esta manera logramos que se ejecute la consulta a la API por primera vez, luego se ejecutará cuando toquemos Run
-    if (movieData === null){
-      getRandomMovie()
-    }
-  }, [movieData])
-  
+    getRandomMovie()
+  }, [])  
 
   
 
@@ -68,8 +69,9 @@ const TryIt = () => {
           </div>
 
           {/* Contenedor de card. */}
+
           <div className='w-[394px] h-[477px] ' >
-              <Card movieData = {movieData} />
+            { loading ? ( <TotoroLoader /> ) : ( <Card movieData = {movieData} /> ) }
           </div>
           
 

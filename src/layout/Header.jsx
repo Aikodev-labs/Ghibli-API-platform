@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
-import Button from '../components/Button';
+import Button from '../components/Button/Button';
 
 
 const Header = () => {

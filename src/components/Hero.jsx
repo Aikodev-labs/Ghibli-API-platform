@@ -1,5 +1,5 @@
 import gatobus from "../assets/images/gatobus.png";
-import Button from './Button';
+import Button from './Button/Button';
 
 
 const Hero = () => {

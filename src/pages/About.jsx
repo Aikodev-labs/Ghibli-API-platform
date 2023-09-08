@@ -2,7 +2,14 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div>About</div>
+    <main className="pt-[113px] h-min-witout-footer">
+        <aside>
+
+        </aside>
+        <section>
+
+        </section>
+    </main>
   )
 }
 

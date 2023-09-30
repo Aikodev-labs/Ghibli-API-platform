@@ -26,7 +26,7 @@ const transparentBackgroundStyle = {
 
 const HighlighterComponent = (props) => {
   return (
-    <div>
+    
       <SyntaxHighlighter
         wrapLines={props.wrapLines}
         language={props.language}
@@ -34,7 +34,7 @@ const HighlighterComponent = (props) => {
       >
         {props.code}
       </SyntaxHighlighter>
-    </div>
+    
   );
 };
 

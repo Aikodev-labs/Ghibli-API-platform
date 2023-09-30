@@ -62,7 +62,7 @@ const TryIt = () => {
             <Button text='RUN SCRIPT' type='secondary' size='m' onClick={handleClick}></Button>
             </div>
 
-            <div className='w-full min-h-[130px] max-h-[172px] bg-cyan950 mt-28 rounded-md overflow-hidden overflow-y-scroll overflow-x-scroll'>
+            <div className='w-full min-h-[130px] max-h-[172px] bg-cyan950 mt-28 rounded-md overflow-hidden overflow-y-scroll'>
               <HighlighterComponent wrapLines={true} language="json" code={JSON.stringify(movieData, null, 2)} />
             </div>
           </div>

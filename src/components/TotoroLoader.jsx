@@ -3,7 +3,7 @@ import totoro from '../assets/images/totoro.gif'
 
 const TotoroLoader = () => {
   return (
-    <img src= {totoro} alt="totoroLoader" />
+    <img className='w-3/4 m-auto h-full object-contain animate-pulse' src= {totoro} alt="totoroLoader" />
   )
 }
 

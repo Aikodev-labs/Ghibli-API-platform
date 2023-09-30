@@ -2,7 +2,7 @@ import { Card } from './Card'
 
 import AosProvider from "../components/AosProvider";
 import { useEffect, useState } from 'react';
-import Button from './Button';
+import Button from './Button/Button';
 import TotoroLoader from './TotoroLoader'
 
 

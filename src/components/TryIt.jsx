@@ -4,6 +4,7 @@ import AosProvider from "../components/AosProvider";
 import { useEffect, useState } from 'react';
 import Button from './Button/Button';
 import TotoroLoader from './TotoroLoader'
+import HighlighterComponent from './HighlighterComponent/HighlighterComponent';
 
 
 const TryIt = () => {
@@ -61,10 +62,8 @@ const TryIt = () => {
             <Button text='RUN SCRIPT' type='secondary' size='m' onClick={handleClick}></Button>
             </div>
 
-            <div className='w-full h-[130px] bg-cyan950 mt-28 rounded-md' >
-              <p className='text-neutral50 w-[659px] h-full m-auto py-4 font-mono text-xl '>
-                null
-              </p>
+            <div className='w-full min-h-[130px] max-h-[172px] bg-cyan950 mt-28 rounded-md overflow-hidden overflow-y-scroll'>
+              <HighlighterComponent wrapLines={true} language="json" code={JSON.stringify(movieData, null, 2)} />
             </div>
           </div>
 

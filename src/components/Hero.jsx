@@ -6,15 +6,15 @@ const Hero = () => {
   return (
 
     <main
-      className="min-h-[500px]  xl:min-h-screen flex items-center
+      className=" pt-24 min-w-screen min-h-[500px] xl:flex xl:items-center  xl:min-h-screen 
     justify-center font-sans px-[72px] mx-auto "
     >
       
       <div className="xl:flex xl:flex-col xl:absolute xl:top-67 leading-[78px] xl:pr-[718px]">
-        <h1 className=" text-[45px] text-center xl:text-[80px] font-semibold tracking-wide text-white">
+        <h1 className=" text-[45px] text-center md:text-[60px] xl:text-[80px] font-semibold tracking-wide text-white">
           GHIBLI API
         </h1>
-        <h2 className="text-[25px] text-center xl:text-[45px] font-medium xl:pl-6 text-white opacity-70">
+        <h2 className="text-[27px] text-center md:text-[40px] xl:text-[45px] font-medium xl:pl-6 text-white opacity-70">
           スタジオジブリ API
         </h2>
         <div className="flex justify-center pt-4 z-10">

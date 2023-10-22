@@ -1,10 +1,10 @@
-export const Card = ({movieData}) => {
+import PropTypes from 'prop-types'
+
+const Card = ({movieData}) => {
 
   if (movieData === null ){
     return "Loading"
   }
-  
-
   
   const { title, director, producer, image, running_time } = movieData
   
@@ -29,4 +29,10 @@ export const Card = ({movieData}) => {
       </div>
     </>
   )
+}
+
+export default Card;
+
+Card.propTypes = {
+  movieData: PropTypes.object.isRequired,
 }

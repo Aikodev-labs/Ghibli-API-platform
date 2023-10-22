@@ -1,5 +1,4 @@
-import { Card } from './Card'
-
+import Card  from './Card/Card'
 import AosProvider from "../components/AosProvider";
 import { useEffect, useState } from 'react';
 import Button from './Button/Button';

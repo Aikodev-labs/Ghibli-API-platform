@@ -45,5 +45,20 @@ body {
 }
 
 .h-min-witout-footer {
-  height: calc(100vh - 192px);
+  min-height: calc(100vh - 226px);
+}
+
+.markdown pre{
+  background-color: #083344;
+  border-radius: 8px;
+  padding: 16px;
+  color: white;
+}
+
+.markdown h1, .markdown h2, .markdown h3, .markdown h4, .markdown h5, .markdown h6{
+  @apply text-3xl font-bold text-cyan950;
+}
+
+.markdown p, .markdown span, .markdown ul, .markdown ol{
+  @apply text-base text-cyan700;
 }

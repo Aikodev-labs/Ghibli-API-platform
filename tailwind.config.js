@@ -1,5 +1,5 @@
 import withMT from "@material-tailwind/react/utils/withMT";
-
+import tailwindAnimated from 'tailwindcss-animated';
 
 export default withMT({
 content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
@@ -22,11 +22,8 @@ extend: {
     }
 },
 },
-
-
-
 plugins: [
-    
+    tailwindAnimated
 ],
 });
 

@@ -1,4 +1,5 @@
-import { BsGithub,BsTwitter,BsFillHeartFill,BsFillCircleFill } from "react-icons/bs";
+import { FaXTwitter } from "react-icons/fa6";
+import { BsGithub,BsFillHeartFill,BsFillCircleFill } from "react-icons/bs";
 import ccby from '../assets/images/ccby.png';
 import vercel from '../assets/images/vercel.png';
 import azure from '../assets/images/azure.png';
@@ -64,7 +65,7 @@ const Footer = () => {
 
                 <div className="w-full h-10 flex pl-4 mt-4 items-center justify-center xl:hidden" >
                     <BsGithub className="text-[25px]" />
-                    <BsTwitter className="text-[28px] mx-6" />
+                    <FaXTwitter className="text-[28px] mx-6" />
                     <BsFillHeartFill  className="text-[24px]"/>
                 </div>
 
@@ -74,7 +75,7 @@ const Footer = () => {
 
                 <div className='hidden xl:flex justify-center xl:justify-end gap-4 items-end pt-[65px] pr-4'>
                     <BsGithub className="text-[25px]" />
-                    <BsTwitter className="text-[28px] " />
+                    <FaXTwitter className="text-[28px] " />
                     <BsFillHeartFill  className="text-[24px]"/>
                 </div>
 

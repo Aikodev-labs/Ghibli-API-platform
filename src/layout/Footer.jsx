@@ -32,7 +32,7 @@ const Footer = () => {
                         <BsFillCircleFill/>
                     </span>
                 </h3>
-                <div className=" grid grid-cols-3 text-[14px] md:text-[16px] xl:text-[18px] max-w-md m-auto xl:max-w-none pt-2 xl:pt-8  gap-4 xl:gap-24 pl-3">
+                <div className=" grid grid-cols-3 text-[14px] md:text-[16px] xl:text-[18px] max-w-md m-auto xl:max-w-none pt-2 xl:pt-8  gap-4 xl:gap-24 pl-4">
                     <h3 >
                         CHARACTERS: 110
                     </h3>
@@ -69,7 +69,7 @@ const Footer = () => {
                     <BsFillHeartFill  className="text-[24px]"/>
                 </div>
 
-                <p className='xl:hidden text-[14px] font-medium mt-8 pb-16 text-center'>
+                <p className='xl:hidden text-[14px] font-medium mt-12 pb-12 text-center'>
                     <p>&copy; 2023 AikoDev. All rights reserved.</p>
                 </p>
 

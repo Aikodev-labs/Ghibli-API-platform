@@ -11,12 +11,14 @@ const WhatAbout = () => {
 
   return (
     <AosProvider fade="fade-up" duration={1000}>
-      <section className="flex-col item-center justify-center h-auto mt-4 m-auto ">
-        <h1 className="font-neue-ltcd text-cyan950 text-center font-black text-5xl">
+      <section className="flex-col item-center justify-center h-auto mt-4 m-auto  ">
+        <h1 className="font-neue-ltcd text-center xl:font-black xl:text-5xl xl:text-cyan950 sm:text-base text-purple700  ">
           WHAT IT IS ABOUT?
         </h1>
-        <div className="flex pt-20 item-center justify-center">
-          <div className='text-cyan700 text-3xl font-medium font-neue-ltcd max-w-xl '>
+
+        <p className='xl:invisible text-lg flex justify-center font-neue-ltcd  text-center'>Unleash the magic of Ghibli <br/> Studio with our free API</p>
+        <div className="pt-20 item-center justify-center xl:flex sm:flex-colum sm:pt-5 ">
+          <div className='text-cyan700 xl:text-3xl  sm:text-base sm:mx-20 font-medium font-neue-ltcd xl:max-w-xl sm:max-w-lg '>
             <p>
               Dive into the incredible <span className='text-cyan950'>universe of Studio Ghibli</span> through our
               fantastic <span className='text-cyan950'>free API</span>. Explore information about movies, characters,
@@ -33,7 +35,7 @@ const WhatAbout = () => {
             <p>Soar with Ghibli's imagination!</p>
           </div>
           
-            <img src={mockup} className='relative bottom-10 right-2 object-contain'></img>
+            <img src={mockup} className='relative object-contain right-2 xl:bottom-10 sm:right-20  '></img>
           
         </div>
       </section>

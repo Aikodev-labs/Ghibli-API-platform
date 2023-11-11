@@ -40,48 +40,65 @@ const TryIt = () => {
   return (
     <AosProvider fade="fade-up" duration={1000} >
       <section className=' max-w-[1366px] h-auto m-auto py-20' >
-        <h1 className='text-[50px] text-center font-extrabold text-cyan950 font-neue-ltcd' >TRY IT</h1>
-        <p className='text-[30px] text-center font-medium text-cyan700 font-neue-ltcd' >Run this code to get a random card.</p>
+        <h1 className='xl:text-[50px] text-[16px] text-center font-extrabold
+         text-purple-700 xl:text-cyan950 font-neue-ltcd' >TRY IT</h1>
+        <p className='xl:text-[30px] text-[22px] text-center font-medium text-cyan700 font-neue-ltcd' >
+          Run this code to get
+        <br className='xl:hidden' />
+         a random card.
+         </p>
 
 
         {/* Contenedor de scripts y card */}
-        <div className='flex justify-around mt-5 ' >
+        <div className='flex xl:justify-around flex-col xl:flex-row mt-5 ' >
 
           {/* Contenedor de scripts */}
-          <div className='w-[717px] h-[auto] relative pt-14 ' >
-            <div className='w-full h-[130px] bg-cyan950 rounded-md ' >
-              <p className='text-neutral50 w-[659px] h-full m-auto py-4 font-mono text-xl ' >
-              fetch('https://ghibli.vercel.app/api/random')
-              .then(response =&gt; response.json()) <br />
-              .then(card =&gt; console.log(card))
+          <div className='xl:w-[717px] w-[419px] h-[auto] xl:relative xl:pt-14 my-10 flex justify-center xl:block gap-3' >
+            <div className='xl:w-full xl:h-[130px] w-[262px] h-[40px]  bg-cyan950 xl:rounded-md rounded-[33px]' >
+              <p className='text-neutral50 xl:w-[659px] w-[209px] h-full m-auto py-4 font-mono text-xs xl:text-xl' >
+             fetch('https://ghibli.vercel.app/api/random')
+            <span className='xl:flex sm:hidden md: hidden'>  .then(response =&gt; response.json()) <br />
+              .then(card =&gt; console.log(card))</span>
               </p>
             </div>
 
-            <div className='absolute right-0 mt-3'>
-            <Button text='RUN SCRIPT' type='secondary' size='m' onClick={handleClick}></Button>
+            <div className='xl:hidden '>
+            <Button text='RUN SCRIPT' type='secondary' size='s' onClick={handleClick}></Button>
             </div>
 
-            <div className='w-full min-h-[130px] max-h-[172px] bg-cyan950 mt-28 rounded-md overflow-hidden overflow-y-scroll'>
+            <div className='sm: hidden xl:block xl:absolute xl:right-0 xl:mt-3'>
+            <Button text='RUN SCRIPT' type='secondary' size='m' onClick={handleClick}></Button>
+            </div>
+           
+           
+            <div className='xl:flex sm:hidden md: hidden w-full min-h-[130px] max-h-[172px]
+             bg-cyan950 mt-28 rounded-md overflow-hidden overflow-y-scroll'>
               <HighlighterComponent wrapLines={true} language="json" code={JSON.stringify(movieData, null, 2)} />
             </div>
           </div>
+          
 
           {/* Contenedor de card. */}
 
-          <div className='w-[394px] h-[477px] ' >
+          <div className='flex justify-center w-[394px]  xl:h-[477px] h-[350px]' >
             { loading ? ( <TotoroLoader /> ) : ( <Card movieData = {movieData} /> ) }
           </div>
           
 
         </div>
 
-        <div className='flex justify-end w-full h-20 mt-16'>
-          <div className='w-[394px] mr-16 text-center' >
-            <p className='font-medium text-2xl text-cyan950 font-neue-ltcd' > 
+        <div className='flex xl:justify-end justify-center w-full h-20 mt-[202px] mb-8 xl:mt-14 xl:mb-0'>
+          <div className='w-[394px] xl:mr-16 text-center' >
+            <p className='font-medium xl:text-2xl text-[20px] text-cyan950 font-neue-ltcd' > 
               <span className='text-cyan700 ' >EXPLORE</span> DOCUMENTATION <span className='text-cyan700' >NOW!</span>
             </p>
 
+          <div className='xl:hidden mt-4 '>
+            <Button text='GET STARTED'size="m" type="primary"></Button>
+          </div> 
+          <div className='sm: hidden xl:block'>
             <Button text='GET STARTED'size="l" type="primary"></Button>
+          </div> 
         
           </div>
           

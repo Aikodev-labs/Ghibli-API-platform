@@ -7,6 +7,7 @@ import azure from '../assets/images/azure.png';
 
 
 
+
 const Footer = () => {
   return (
 

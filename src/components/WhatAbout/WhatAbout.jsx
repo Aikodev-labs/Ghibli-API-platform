@@ -1,7 +1,7 @@
 import { useEffect } from "react";
-import mockup from "../assets/images/mockup.png";
+import mockup from "../../assets/images/mockup.png";
 
-import AosProvider from "../components/AosProvider";
+import AosProvider from "../AosProvider";
 
 const WhatAbout = () => {
   return (
@@ -14,8 +14,8 @@ const WhatAbout = () => {
         <p className="xl:invisible text-lg flex justify-center font-neue-ltcd  text-center">
           Unleash the magic of Ghibli <br /> Studio with our free API
         </p>
-        <div className="pt-20 item-center justify-center xl:flex sm:flex-colum sm:pt-5">
-          <div className="text-cyan700 xl:text-3xl  sm:text-base sm:mx-20 font-medium font-neue-ltcd xl:max-w-xl sm:max-w-lg ">
+        <div className="item-center justify-center xl:flex pt-4 ">
+          <div className="text-cyan700 xl:w-1/2 xl:text-3xl md:text-xl sm:text-base sm:mx-20 font-medium font-neue-ltcd xl:max-w-xl sm:max-w-lg mb-4">
             <p>
               Dive into the incredible{" "}
               <span className="text-cyan950">universe of Studio Ghibli</span>{" "}
@@ -37,11 +37,11 @@ const WhatAbout = () => {
 
             <p>Soar with Ghibli's imagination!</p>
           </div>
+          <div className="right-6 relative xl:right-18 xl:bottom-2 w-100">
 
-          <img
-            src={mockup}
-            className="relative object-contain xl:w-auto right-2 xl:bottom-10 sm:right-6 sm:min-w-1/4 md:min-w-3/4"
-          ></img>
+          <img src={mockup}></img>
+          </div>
+          
         </div>
       </section>
     </AosProvider>

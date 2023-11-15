@@ -1,7 +1,7 @@
 import React from "react";
 
 
-const Button = ({ text, type, size, onClick }) => {
+const Button = ({ text, type, size, onClick, disable }) => {
   const getType = () => {
     switch (type) {
       case "primary":
@@ -38,13 +38,16 @@ const Button = ({ text, type, size, onClick }) => {
         return "text-sm";
     }
   };
+ const diseable = ()=>{
+  return diseable
+ }
 
   const buttonClasses = `${getType()} ${getSize()} rounded-full text-center py-2 justify-center items-center inline-flex font-neue-lt `;
 
   return (
     /*Ejemplo de uso <Button text='TEXTO' type="primary" size="s"></Buttton>*/
 
-    <button className={buttonClasses} onClick={onClick} >{text}</button>
+    <button className={buttonClasses} onClick={onClick} diseable={diseable} >{text}</button>
   );
 };
 export default Button;

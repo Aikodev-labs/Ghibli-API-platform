@@ -1,9 +1,9 @@
-import Card  from './Card/Card'
-import AosProvider from "../components/AosProvider";
+import Card  from '../Card/Card'
+import AosProvider from "../AosProvider";
 import { useEffect, useState } from 'react';
-import Button from './Button/Button';
-import TotoroLoader from './TotoroLoader'
-import HighlighterComponent from './HighlighterComponent/HighlighterComponent';
+import Button from '../Button/Button';
+import TotoroLoader from '../TotoroLoader'
+import HighlighterComponent from '../HighlighterComponent/HighlighterComponent';
 
 
 const TryIt = () => {
@@ -55,11 +55,8 @@ const TryIt = () => {
           {/* Contenedor de scripts */}
           <div className='xl:w-[717px] w-[419px] h-[auto] xl:relative xl:pt-14 my-10 flex justify-center xl:block gap-3' >
             <div className='xl:w-full xl:h-[130px] w-[262px] h-[40px]  bg-cyan950 xl:rounded-md rounded-[33px]' >
-              <p className='text-neutral50 xl:w-[659px] w-[209px] h-full m-auto py-4 font-mono text-xs xl:text-xl' >
-             fetch('https://ghibli.vercel.app/api/random')
-            <span className='xl:flex sm:hidden md: hidden'>  .then(response =&gt; response.json()) <br />
-              .then(card =&gt; console.log(card))</span>
-              </p>
+              <HighlighterComponent language="jsx" code={"fetch('https://ghibli-api-v1.azurewebsites.net/api/v1/movies/randomMovie')"}/> 
+          
             </div>
 
             <div className='xl:hidden '>

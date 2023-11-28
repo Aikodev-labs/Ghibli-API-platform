@@ -50,16 +50,19 @@ const TryIt = () => {
 
 
         {/* Contenedor de scripts y card */}
-        <div className='flex xl:justify-around flex-col xl:flex-row mt-5 ' >
+        <div className='flex justify-center xl:justify-around
+         flex-col xl:flex-row mt-5 ' >
 
           {/* Contenedor de scripts */}
-          <div className='xl:w-[717px] w-[419px] h-[auto] xl:relative xl:pt-14 my-10 flex justify-center xl:block gap-3' >
+          <div className='xl:w-[717px] w-[419px] h-[auto] xl:relative xl:pt-14 my-10 
+          flex justify-center xl:block gap-3' >
             <div className='xl:w-full xl:h-[130px] w-[262px] h-[40px]  bg-cyan950 xl:rounded-md rounded-[33px]' >
-              <HighlighterComponent language="jsx" code={"fetch('https://ghibli-api-v1.azurewebsites.net/api/v1/movies/randomMovie')"}/> 
+            {/*  <HighlighterComponent language="jsx"
+               code={"fetch('https://ghibli-api-v1.azurewebsites.net/api/v1/movies/randomMovie')"}/> */}
           
             </div>
 
-            <div className='xl:hidden '>
+            <div className='xl:hidden'>
             <Button text='RUN SCRIPT' type='secondary' size='s' onClick={handleClick}></Button>
             </div>
 

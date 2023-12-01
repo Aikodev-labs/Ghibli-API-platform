@@ -7,7 +7,9 @@ const DocRouter = () => {
     <div className="flex">
       <Aside />
       <Routes>
-        <Route path="/" element={<Doc />}></Route>
+        <Route path="/" element={<Doc />}>
+          <Route path=":docs" element={<Doc />} />
+        </Route>
       </Routes>
     </div>
   );

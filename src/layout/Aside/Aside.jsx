@@ -1,21 +1,22 @@
 import AsideList from "./AsideList"
+import './styles.css'
 
 const Aside = () => {
 
   const menu = [
     {
       label: 'Introduction',
-      path: '/introduction',
+      path: '/docs/getStarted',
       icon: '',
       children: [
         {
           label: 'REST',
-          path: '/rest',
+          path: '/docs/rest',
           icon: '',
         },
         {
-          label: 'JavaScript Client',
-          path: '/javascript-client',
+          label: 'Info and Pagination',
+          path: '/docs/infoAndPagination',
           icon: '',
         },
       ]
@@ -67,7 +68,7 @@ const Aside = () => {
   ]
 
   return (
-    <aside className="h-full mt-[113px] px-6 py-3">
+    <aside className="h-full mt-[113px] w-80 px-6 py-3">
       <div className="flex flex-col gap-2">
         {menu.map((item, index) => (
           <AsideList key={index} menu={item} />

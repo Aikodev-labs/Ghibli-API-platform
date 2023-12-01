@@ -34,5 +34,5 @@ const Card = ({movieData}) => {
 export default Card;
 
 Card.propTypes = {
-  movieData: PropTypes.object.isRequired,
+  movieData: PropTypes.object,
 }

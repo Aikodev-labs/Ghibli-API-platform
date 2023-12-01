@@ -46,7 +46,7 @@ const Footer = () => {
                 <div className="flex justify-center gap-3">
                     <div className="hidden xl:block pl-1 pt-14">
                         <p className='text-[12px] font-mediummt-[48px]'>
-                            <p>&copy; 2023 AikoDev. All rights reserved.</p>
+                            <span>&copy; 2023 AikoDev. All rights reserved.</span>
                         </p>
                     </div>
                 </div>
@@ -70,7 +70,7 @@ const Footer = () => {
                 </div>
 
                 <p className='xl:hidden text-[14px] font-medium mt-12 pb-12 text-center'>
-                    <p>&copy; 2023 AikoDev. All rights reserved.</p>
+                    <span>&copy; 2023 AikoDev. All rights reserved.</span>
                 </p>
 
                 <div className='hidden xl:flex justify-center xl:justify-end gap-4 items-end pt-[65px] pr-4'>

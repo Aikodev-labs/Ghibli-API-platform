@@ -26,3 +26,10 @@ Además, se recibirán metadatos de la paginación como se puede observar en el 
 
 Los parámetros que se pueden enviar para ordenar y paginar los elementos son los siguientes:
 
+- `limit`: cantidad de elementos a obtener.
+- `sort`: campo por el cual se desea ordenar los elementos.
+- `order`: orden de los elementos, puede ser `asc` o `desc`.
+- `page`: número de página a obtener.
+
+## Ejemplos
+

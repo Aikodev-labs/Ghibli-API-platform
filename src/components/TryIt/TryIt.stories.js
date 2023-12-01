@@ -12,7 +12,7 @@ export default {
 
   export const TryItMain = {
     parameters: {
-      layout: "left",
+      layout: "centered",
     },
 
   

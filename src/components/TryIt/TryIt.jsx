@@ -42,7 +42,7 @@ const TryIt = () => {
       <section className=' max-w-[1366px] h-auto m-auto py-20' >
         <h1 className='xl:text-[50px] text-[16px] text-center font-extrabold
          text-purple-700 xl:text-cyan950 font-neue-ltcd' >TRY IT</h1>
-        <p className='xl:text-[30px] text-[22px] text-center font-medium text-cyan700 font-neue-ltcd' >
+        <p className='xl:text-[30px] text-[22px] text-center font-medium xl:text-cyan700 text-cyan950 font-neue-ltcd' >
           Run this code to get
         <br className='xl:hidden' />
          a random card.
@@ -56,14 +56,15 @@ const TryIt = () => {
           {/* Contenedor de scripts */}
           <div className='xl:w-[717px] w-[419px] h-[auto] xl:relative xl:pt-14 my-10 
           flex justify-center xl:block gap-3' >
-            <div className='xl:w-full xl:h-[130px] w-[262px] h-[40px]  bg-cyan950 xl:rounded-md rounded-[33px]' >
-            {/*  <HighlighterComponent language="jsx"
-               code={"fetch('https://ghibli-api-v1.azurewebsites.net/api/v1/movies/randomMovie')"}/> */}
+            <div className='xl:w-full xl:h-[130px] w-[262px] h-[40px]
+              bg-cyan950 xl:rounded-md rounded-[33px] flex items-center xl:items-start' >
+              <HighlighterComponent language="jsx"
+               code={"fetch('https://ghibli-api-v1.azurewebsites.net/api/v1/movies/randomMovie')"}/> 
           
             </div>
 
             <div className='xl:hidden'>
-            <Button text='RUN SCRIPT' type='secondary' size='s' onClick={handleClick}></Button>
+            <Button text='RUN' type='secondary' size='s' onClick={handleClick}></Button>
             </div>
 
             <div className='sm: hidden xl:block xl:absolute xl:right-0 xl:mt-3'>

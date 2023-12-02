@@ -55,7 +55,7 @@ const TryIt = () => {
          flex-col xl:flex-row mt-5 ' >
 
           {/* Contenedor de scripts */}
-          <div className='xl:w-[717px] w-[419px] h-[auto] xl:relative xl:pt-14 my-10 
+          <div className='xl:w-[717px] h-[auto] xl:relative xl:pt-14 my-10 
           flex justify-center xl:block gap-3 xl:mr-[78px]' >
             <div className='xl:w-full xl:h-[130px] w-[262px] h-[40px] md:w-[427px]
               bg-cyan950 xl:rounded-md rounded-[33px] flex items-center xl:items-start pt-5 xl:pt-0' >

@@ -23,12 +23,12 @@ const Aside = () => {
     },
     {
       label: 'Character',
-      path: '/character',
+      path: '/docs/characters',
       icon: '',
       children: [
         {
           label: 'Character scheme',
-          path: '/character-scheme',
+          path: '/docs/characters#schema',
           icon: '',
         },
         {

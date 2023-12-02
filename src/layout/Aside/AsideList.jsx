@@ -1,12 +1,16 @@
 import { PropTypes } from 'prop-types';
 
+import { NavLink } from 'react-router-dom';
+
 const AsideList = ({ menu }) => {
   return (
     <div className='mb-4'>
-        <h3 className='font-bold text-xl text-cyan950 mb-3'>{menu.label}</h3>
+        <NavLink to={menu.path} className='text-cyan700 font-bold text-xl mb-3'>{menu.label}</NavLink>
         <ul className='text-cyan700 flex flex-col gap-1'>
             {menu.children.map((item, index) => (
-                <li key={index}>{item.label}</li>
+                <li key={index}>
+                    <NavLink to={item.path} className='text-cyan700 font-normal text-lg'>{item.label}</NavLink>
+                </li>
             ))}
         </ul>
     </div>

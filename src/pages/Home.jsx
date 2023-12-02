@@ -1,5 +1,5 @@
 import Hero from "../components/Hero";
-import TryIt from "../components/TryIt";
+import TryIt from "../components/TryIt/TryIt";
 import WhatAbout from "../components/WhatAbout";
 import background from "../assets/images/clouds2.svg";
 

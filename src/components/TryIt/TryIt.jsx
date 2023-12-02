@@ -40,9 +40,10 @@ const TryIt = () => {
   return (
     <AosProvider fade="fade-up" duration={1000} >
       <section className=' max-w-[1366px] h-auto m-auto py-20' >
-        <h1 className='xl:text-[50px] text-[16px] text-center font-extrabold
+        <h1 className='xl:text-[50px] text-[16px] text-center font-extrabold md:text-[22px]
          text-purple-700 xl:text-cyan950 font-neue-ltcd' >TRY IT</h1>
-        <p className='xl:text-[30px] text-[22px] text-center font-medium xl:text-cyan700 text-cyan950 font-neue-ltcd' >
+        <p className='xl:text-[32px] text-[22px] md:text-[32px] text-center font-medium xl:text-cyan700
+         text-cyan950 font-neue-ltcd md:leading-normal' >
           Run this code to get
         <br className='xl:hidden' />
          a random card.
@@ -55,9 +56,9 @@ const TryIt = () => {
 
           {/* Contenedor de scripts */}
           <div className='xl:w-[717px] w-[419px] h-[auto] xl:relative xl:pt-14 my-10 
-          flex justify-center xl:block gap-3' >
-            <div className='xl:w-full xl:h-[130px] w-[262px] h-[40px]
-              bg-cyan950 xl:rounded-md rounded-[33px] flex items-center xl:items-start' >
+          flex justify-center xl:block gap-3 xl:mr-[78px]' >
+            <div className='xl:w-full xl:h-[130px] w-[262px] h-[40px] md:w-[427px]
+              bg-cyan950 xl:rounded-md rounded-[33px] flex items-center xl:items-start pt-5 xl:pt-0' >
               <HighlighterComponent language="jsx"
                code={"fetch('https://ghibli-api-v1.azurewebsites.net/api/v1/movies/randomMovie')"}/> 
           
@@ -70,6 +71,8 @@ const TryIt = () => {
             <div className='sm: hidden xl:block xl:absolute xl:right-0 xl:mt-3'>
             <Button text='RUN SCRIPT' type='secondary' size='m' onClick={handleClick}></Button>
             </div>
+
+           
            
            
             <div className='xl:flex sm:hidden md: hidden w-full min-h-[130px] max-h-[172px]
@@ -81,7 +84,7 @@ const TryIt = () => {
 
           {/* Contenedor de card. */}
 
-          <div className='flex justify-center w-[394px]  xl:h-[477px] h-[350px]' >
+          <div className='flex justify-center xl:w-[394px] xl:h-[477px] h-[350px]' >
             { loading ? ( <TotoroLoader /> ) : ( <Card movieData = {movieData} /> ) }
           </div>
           
@@ -89,8 +92,8 @@ const TryIt = () => {
         </div>
 
         <div className='flex xl:justify-end justify-center w-full h-20 mt-[202px] mb-8 xl:mt-14 xl:mb-0'>
-          <div className='w-[394px] xl:mr-16 text-center' >
-            <p className='font-medium xl:text-2xl text-[20px] text-cyan950 font-neue-ltcd' > 
+          <div className='w-[394px] text-center' >
+            <p className='font-medium xl:text-2xl text-[20px] text-cyan950 font-neue-ltcd md:text-[30px]' > 
               <span className='text-cyan700 ' >EXPLORE</span> DOCUMENTATION <span className='text-cyan700' >NOW!</span>
             </p>
 

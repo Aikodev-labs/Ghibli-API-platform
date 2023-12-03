@@ -6,15 +6,15 @@ import AosProvider from "../AosProvider";
 const WhatAbout = () => {
   return (
     <AosProvider fade="fade-up" duration={1000}>
-      <section className="flex-col item-center justify-center h-auto mt-4 m-auto ">
-        <h1 className="font-neue-ltcd text-center xl:font-black xl:text-5xl xl:text-cyan950 sm:text-base text-purple700  ">
+      <section className="flex-col item-center justify-center h-auto mt-4 m-auto px-4">
+        <h1 className="font-neue-ltcd text-center xl:font-black text-[22px] xl:text-[50px]  xl:text-cyan950 text-purple700  ">
           WHAT IT IS ABOUT?
         </h1>
 
-        <p className="xl:invisible text-lg flex justify-center font-neue-ltcd  text-center">
+        <p className="text-[22px] md:text-[32px] md:leading-9 xl:invisible text-lg flex justify-center font-neue-ltcd  text-center">
           Unleash the magic of Ghibli <br /> Studio with our free API
         </p>
-        <div className="item-center justify-center xl:flex pt-4 ">
+        <div className="items-center justify-center flex flex-col xl:flex-row pt-4">
           <div className="text-cyan700 xl:w-1/2 xl:text-3xl md:text-xl sm:text-base sm:mx-20 font-medium font-neue-ltcd xl:max-w-xl sm:max-w-lg mb-4">
             <p>
               Dive into the incredible{" "}

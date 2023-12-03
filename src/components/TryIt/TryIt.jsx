@@ -39,10 +39,10 @@ const TryIt = () => {
 
   return (
     <AosProvider fade="fade-up" duration={1000} >
-      <section className=' max-w-[1366px] h-auto m-auto py-20' >
-        <h1 className='xl:text-[50px] text-[16px] text-center font-extrabold md:text-[22px]
+      <section className=' max-w-[1366px] h-auto m-auto py-20 px-4' >
+        <h1 className='xl:text-[50px] text-[16px] text-center font-medium xl:font-black md:text-[22px]
          text-purple-700 xl:text-cyan950 font-neue-ltcd' >TRY IT</h1>
-        <p className='xl:text-[32px] text-[22px] md:text-[32px] text-center font-medium xl:text-cyan700
+        <p className='md:leading-9 xl:text-[32px] text-[22px] md:text-[32px] text-center font-medium xl:text-cyan700
          text-cyan950 font-neue-ltcd md:leading-normal' >
           Run this code to get
         <br className='xl:hidden' />

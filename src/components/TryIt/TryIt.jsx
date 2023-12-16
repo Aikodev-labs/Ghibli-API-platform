@@ -57,8 +57,8 @@ const TryIt = () => {
           <div className='xl:w-[717px] w-[419px] h-[auto] xl:relative xl:pt-14 my-10 
           flex justify-center xl:block gap-3' >
             <div className='xl:w-full xl:h-[130px] w-[262px] h-[40px]  bg-cyan950 xl:rounded-md rounded-[33px]' >
-            {/*  <HighlighterComponent language="jsx"
-               code={"fetch('https://ghibli-api-v1.azurewebsites.net/api/v1/movies/randomMovie')"}/> */}
+              <HighlighterComponent language="jsx"
+               code={"fetch('https://ghibli-api-v1.azurewebsites.net/api/v1/movies/randomMovie')"}/> 
           
             </div>
 

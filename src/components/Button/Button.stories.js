@@ -30,3 +30,11 @@ export const Secondary = {
         onclick: () => alert("Button clicked"),
     },
 };
+
+export const Disabled = {
+  args: {
+      text: "Disabled",
+      type: "disabled",
+      size: "s",
+  },
+};

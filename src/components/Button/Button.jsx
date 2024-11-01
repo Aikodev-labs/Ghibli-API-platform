@@ -1,4 +1,4 @@
-const Button = ({ text, type, size, onClick, disabled }) => {
+const Button = ({ text, type, size, onClick}) => {
   const getType = () => {
     switch (type) {
       case "primary":
@@ -9,6 +9,8 @@ const Button = ({ text, type, size, onClick, disabled }) => {
         return "outline outline-1 outline-cyan700 text-cyan700"; /*Sin fondo solo de linea */  
       case "secondary":
         return "bg-teal-600 text-white hover:bg-teal-700"; /*Boton verde*/
+      case "disabled":
+        return "bg-gray-500 text-white font-bold py-2 px-4 rounded opacity-50 cursor-not-allowed"  ; /*botón desactivado*/
       default:
         return "bg-gray-500 text-white";
     }
@@ -26,16 +28,14 @@ const Button = ({ text, type, size, onClick, disabled }) => {
         return "text-sm";
     }
   };
- const diseable = ()=>{
-  return diseable
- }
 
-  const buttonClasses = `${getType()} ${getSize()} rounded-full text-center py-2 justify-center items-center inline-flex font-neue-lt `;
+
+  const buttonClasses = `${getType()} ${getSize()} rounded-full text-center py-2 justify-center items-center inline-flex font-neue-lt`;
 
   return (
     /*Ejemplo de uso <Button text='TEXTO' type="primary" size="s"></Buttton>*/
 
-    <button className={buttonClasses} onClick={onClick} disabled={disabled} >{text}</button>
+    <button className={buttonClasses} onClick={onClick} >{text}</button>
   );
 };
 export default Button;

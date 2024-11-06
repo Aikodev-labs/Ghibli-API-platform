@@ -6,7 +6,7 @@ const Button = ({ text, type, size, onClick, disabled }) => {
       case "outline":
         return "outline outline-1 outline-white text-white"; /*Sin fondo solo de linea */
       case "outline_blue":
-        return "outline outline-1 outline-cyan700 text-cyan700"; /*Sin fondo solo de linea */  
+        return "outline outline-1 outline-cyan700 text-cyan700"; /*Sin fondo solo de linea */   
       case "secondary":
         return "bg-teal-600 text-white hover:bg-teal-700"; /*Boton verde*/
       default:

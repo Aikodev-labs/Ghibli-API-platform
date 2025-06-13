@@ -3,6 +3,8 @@ import TryIt from "../components/TryIt/TryIt";
 import WhatAbout from "../components/WhatAbout";
 import background from "../assets/images/clouds2.svg";
 
+
+
 const Home = () => {
   return (
     <main className="bg-background_Blue">
@@ -15,7 +17,7 @@ const Home = () => {
         <div className=" bg-gradient-to-b from-transparent to-white">
         <TryIt /> 
         </div>
-
+  
       </div>
 
       

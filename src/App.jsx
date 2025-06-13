@@ -7,6 +7,7 @@ import Footer from "./layout/Footer";
 import About from "./pages/About";
 import Team from "./pages/Team";
 import DocRouter from "./router/doc.router";
+import Support from "./pages/SupporT.JSX";
 
 
 
@@ -31,6 +32,7 @@ function App() {
         <Route path="/docs/*"   element={ <DocRouter /> } />
         <Route path="/about" element={<About />}/>
         <Route path="/team" element={<Team />}/>
+        <Route path="/support" element={<Support />}/>
       </Routes>
 
       <Footer />

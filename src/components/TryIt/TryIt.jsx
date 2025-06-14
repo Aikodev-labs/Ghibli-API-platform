@@ -71,7 +71,6 @@ const TryIt = () => {
                 code={
                   "fetch('https://ghibli-api-v1.azurewebsites.net/api/v1/movies/randomMovie')"
                 }
-                maximizeControl={true}
               />
             </div>
 
@@ -101,6 +100,7 @@ const TryIt = () => {
                 wrapLines={true}
                 language="json"
                 code={JSON.stringify(movieData, null, 2)}
+                maximizeControl={true}
               />
             </div>
           </div>

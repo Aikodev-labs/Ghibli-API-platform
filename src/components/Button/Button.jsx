@@ -1,4 +1,6 @@
-const Button = ({ text, type, size, onClick}) => {
+import PropTypes from "prop-types";
+
+const Button = ({ text, type, size, onClick, disabled }) => {
   const getType = () => {
     switch (type) {
       case "primary":
@@ -6,11 +8,11 @@ const Button = ({ text, type, size, onClick}) => {
       case "outline":
         return "outline outline-1 outline-white text-white"; /*Sin fondo solo de linea */
       case "outline_blue":
-        return "outline outline-1 outline-cyan700 text-cyan700"; /*Sin fondo solo de linea */  
+        return "outline outline-1 outline-cyan700 text-cyan700"; /*Sin fondo solo de linea */
       case "secondary":
         return "bg-teal-600 text-white hover:bg-teal-700"; /*Boton verde*/
       case "disabled":
-        return "bg-gray-500 text-white font-bold py-2 px-4 rounded opacity-50 cursor-not-allowed"  ; /*botón desactivado*/
+        return "bg-gray-500 text-white font-bold py-2 px-4 rounded opacity-50 cursor-not-allowed"; /*botón desactivado*/
       default:
         return "bg-gray-500 text-white";
     }
@@ -29,14 +31,22 @@ const Button = ({ text, type, size, onClick}) => {
     }
   };
 
-
   const buttonClasses = `${getType()} ${getSize()} rounded-full text-center py-2 justify-center items-center inline-flex font-neue-lt`;
 
   return (
     /*Ejemplo de uso <Button text='TEXTO' type="primary" size="s"></Buttton>*/
 
-    <button className={buttonClasses} onClick={onClick} >{text}</button>
+    <button className={buttonClasses} onClick={onClick} disabled={disabled}>
+      {text}
+    </button>
   );
 };
 export default Button;
 
+Button.propTypes = {
+  text: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
+  size: PropTypes.string.isRequired,
+  onClick: PropTypes.func.isRequired,
+  disabled: PropTypes.bool,
+};

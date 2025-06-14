@@ -1,0 +1,65 @@
+/* Scrollbars minimalistas y modernos */
+.highlighter-container {
+  /* Configuración básica del contenedor */
+  overflow: auto;
+  position: relative;
+}
+
+/* Ocultar scrollbars del contenedor externo */
+.highlighter-component-wrapper {
+  overflow: hidden !important;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+.highlighter-component-wrapper::-webkit-scrollbar {
+  display: none; /* WebKit */
+}
+
+/* Webkit scrollbars (Chrome, Safari, Edge) */
+.highlighter-container::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+}
+
+.highlighter-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.highlighter-container::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 1.5px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.highlighter-container::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.2);
+}
+
+.highlighter-container::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* Firefox scrollbars */
+.highlighter-container {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.15) transparent;
+}
+
+/* Animaciones de entrada/salida del scrollbar */
+.highlighter-container:not(:hover)::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* Asegurar que el contenido se extienda correctamente */
+.highlighter-container pre {
+  min-width: max-content !important;
+}
+
+/* Estilo del botón de maximizar mejorado */
+.maximize-button {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}

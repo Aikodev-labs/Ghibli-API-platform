@@ -11,6 +11,8 @@ const Header = () => {
     { name: "DOCS", path: "/docs" },
     { name: "ABOUT", path: "/about" },
     { name: "TEAM", path: "/team" },
+    { name: "SUPPORT US", path: "/support" }
+    
   ];
 
   const pagesMobile = [
@@ -67,7 +69,7 @@ const Header = () => {
           
             <ul className="xl:flex hidden gap-12 mr-60 px-24 fS relative font-neue-ltcd">
               {pages.map((page, index) => (
-                <li className="group font-medium text-[25px] hover:scale-105  " key={index}>
+                <li className= {`group font-medium text-[25px] hover:scale-105 ${page.name === "SUPPORT US" ? "hidden" : ""} `} key={index}  >
                   <NavLink
                     to={page.path}
                     className={({isActive}) => isActive && location.pathname === "/" ? ("bg-purple-900 px-2 rounded-md cursor-default")
@@ -82,8 +84,10 @@ const Header = () => {
               
                 ))}
             </ul>
-            <div className="xl:flex hidden">
-            <Button text="SUPPORT US" type={location.pathname==='/'? 'outline': 'outline_blue'} size='l'></Button>
+            <div className=" xl:flex hidden">
+              <NavLink to={"/support"}  className={location.pathname === "/support" ? "bg-cyan950 rounded-full" : "" } >
+                <Button text="SUPPORT US" type={location.pathname==='/' ? 'outline': 'outline_blue' && location.pathname==="/support" ? 'outline' : 'outline_blue'} size='l'></Button>
+              </NavLink>
             </div>
         </nav>
     

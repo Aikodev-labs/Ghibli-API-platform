@@ -14,5 +14,8 @@ const config = {
   docs: {
     autodocs: "tag",
   },
+  viteFinal:(config)=> {
+    return config
+  }
 };
 export default config;

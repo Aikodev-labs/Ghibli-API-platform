@@ -1,0 +1,11 @@
+aside a{
+    @apply transition-all duration-300 ease-in-out;
+}
+
+aside a.active{
+    @apply text-purple700;
+}
+
+aside a:hover{
+    @apply text-purple700 !important;
+}

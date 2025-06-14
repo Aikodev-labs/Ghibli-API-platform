@@ -55,6 +55,14 @@ body {
   color: white;
 }
 
+.markdown code{
+  background-color: #083344;
+  border-radius: 4px;
+  font-size: 0.8em;
+  padding: 2px 6px;
+  color: white;
+}
+
 .markdown h1, .markdown h2, .markdown h3, .markdown h4, .markdown h5, .markdown h6{
   @apply text-3xl font-bold text-cyan950;
 }
@@ -62,3 +70,64 @@ body {
 .markdown p, .markdown span, .markdown ul, .markdown ol{
   @apply text-base text-cyan700;
 }
+
+.markdown a{
+  @apply text-base text-cyan950 underline;
+}
+
+.markdown a:hover{
+  @apply text-base text-cyan950 underline;
+}
+
+.markdown ul{
+  @apply list-disc list-inside;
+}
+
+.markdown ol{
+  @apply list-decimal list-inside;
+}
+
+.markdown li{
+  @apply text-base text-cyan700;
+}
+
+.markdown blockquote{
+  @apply text-base text-cyan700 border-l-4 border-cyan950 pl-4;
+}
+
+.markdown hr{
+  @apply border-cyan950 border-2 my-8;
+}
+
+.markdown table{
+  @apply border-collapse border-cyan950 border-2;
+}
+
+.markdown table th{
+  @apply border-cyan950 border-2 bg-cyan950 text-white text-base font-bold p-2;
+}
+
+.markdown table td{
+  @apply border-cyan950 border-2 text-base p-2;
+}
+
+.markdown table tr:nth-child(even){
+  @apply bg-cyan950;
+}
+
+.markdown table tr:nth-child(odd){
+  @apply bg-cyan700;
+}
+
+.markdown table tr:hover{
+  @apply bg-cyan950;
+}
+
+.markdown table tr:hover td{
+  @apply bg-cyan950;
+}
+
+.markdown table tr:hover th{
+  @apply bg-cyan950;
+}
+

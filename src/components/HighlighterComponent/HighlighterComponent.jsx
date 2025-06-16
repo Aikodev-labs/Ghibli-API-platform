@@ -24,6 +24,9 @@ const transparentBackgroundStyle = {
     padding: "1rem !important",
     overflow: "visible !important",
     whiteSpace: "pre !important",
+    width: "100%",
+    height: "100%",
+    textShadow: "none !important",
   },
   ".token": {
     textShadow: "none !important",
@@ -41,11 +44,11 @@ const HighlighterComponent = (props) => {
   };
 
   const renderHighlighter = (isInModal = false) => (
-    <div className={`${isInModal ? "h-full" : ""}`}>
+    <div className={`${isInModal ? "h-full" : "h-full"}`}>
       <div
         className={`
           highlighter-container
-          ${isInModal ? "h-full" : "max-h-96"} 
+          ${isInModal ? "h-full" : "max-h-96 h-full"} 
           overflow-auto 
           transition-all duration-200
           rounded-md
@@ -65,7 +68,7 @@ const HighlighterComponent = (props) => {
             background: "transparent",
             overflow: "visible",
             whiteSpace: "pre",
-            minWidth: "100%",
+            width: "100%",
           }}
         >
           {props.code}
